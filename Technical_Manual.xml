@@ -1,5 +1,4 @@
-﻿<!--This comment from Arunpart of the branch-->
-<unit id="New Torpedo Defence System">
+﻿<unit id="New Torpedo Defence System">
   <title>New Torpedo Defence System</title>
   <system_level id="System Level Information">
     <title>System Level Information</title>
@@ -254,519 +253,565 @@
 		  </section>
 		  <section id="1.3 Brief Technical Specifications  Description" level="3">
 			  <title>1.3 Brief Technical Specifications &amp; Description</title>
-			  <section id="1.3.1 Technical Specifications of NTDS" level="4">
-				  <title>1.3.1 Technical Specifications of NTDS</title>
-				  <content>
-					  <para>
-						  The technical performance
-						  parameters of the NTDS are               shown in the table below:
-					  </para>
-					  <para>
-						  <h6>
-							  Table 1.1:
-							  Technical Specifications
-						  </h6>
-					  </para>
-					  <para
+        <section id="1.3.1 Technical Specifications of NTDS" level="4">
+          <title>1.3.1 Technical Specifications of NTDS</title>
+          <content>
+            <para>
+              <table frame="box" rules="all">
+                <colgroup>
+                  <col width="33*"/>
+                  <col width="33*"/>
+                  <col width="33*"/>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td align="center">
+                      <h6>Sl.No.</h6>
+                    </td>
+                    <td>
+                      <h6>Parameter</h6>
+                    </td>
+                    <td>
+                      <h6>Specification</h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      <h6>
+                        Expendable Device Launcher
+                        (EDL)
+                      </h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">1</td>
+                    <td>No. of Barrels</td>
+                    <td>10 barrels per EDL</td>
+                  </tr>
+                  <tr>
+                    <td align="center">2</td>
+                    <td>Mass</td>
+                    <td>825 kg (Approx.)</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      <h6>Firing Valve Assembly (FVA)</h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">3</td>
+                    <td>Number of FVA’s</td>
+                    <td>10/EDL</td>
+                  </tr>
+                  <tr>
+                    <td align="center" rowspan="2">4</td>
+                    <td rowspan="2">Firing valve opening and performance</td>
+                    <td>
+                      Flow area should open minimum 63% in 15
+                      msec with flow opening                       of 12mm diameter.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      When venting the air pressure is reduced
+                      to &lt; 65kPA. Firing                       valve returns to closed
+                      position automatically after firing.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">5</td>
+                    <td>Charging time</td>
+                    <td>
+                      The charging time should be less than 1
+                      minute for each reservoir                       for storing 1 litre
+                      dry compressed air at 90bar pressure.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">6</td>
+                    <td>Leakage</td>
+                    <td>
+                      FVA once charged up to 105bar, there should
+                      be no significant                       leakage for up to 45 days.
+                      2% leakage up to 60 days is allowed.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">7</td>
+                    <td>Selector valve</td>
+                    <td>5-way mechanical selector valve (Safe//Charge/Vent/Arm)</td>
+                  </tr>
+                  <tr>
+                    <td align="center">8</td>
+                    <td>Solenoid Valve</td>
+                    <td>24V DC/ 0.371A</td>
+                  </tr>
+                  <tr>
+                    <td align="center" rowspan="2">9</td>
+                    <td rowspan="2">Firing Lines Output</td>
+                    <td>Current: 500mA (Max.)</td>
+                  </tr>
+                  <tr>
+                    <td>Duration: 10 Sec.</td>
+                  </tr>
+                  <tr>
+                    <td align="center">10</td>
+                    <td>Mass</td>
+                    <td>&lt; 20 Kg (Without Interface Sleeve assembly and EAD)</td>
+                  </tr>
+                  <tr>
+                    <td align="center">11</td>
+                    <td>Dimensions</td>
+                    <td>
+                      FVA assembly (FVA and Interface sleeve)
+                      fits in a cylindrical                       space of diameter 200
+                      mm (approx.) and length 610 mm (approx.).
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" rowspan="2">12</td>
+                    <td rowspan="2">Interface</td>
+                    <td>
+                      The EDL housing is mounted on the plinth
+                      which is welded to the                       ship’s deck.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      The FVA to EDL interface is through a bolted
+                      joint provided on                       the interface flange.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">13</td>
+                    <td>Device detection</td>
+                    <td>
+                      Has provision for detection of eight types
+                      of EADs (Stores) mounted                       in the launcher barrel.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      <h6>Local Control Unit (LCU)</h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">14</td>
+                    <td>CPU (Program Memory)</td>
+                    <td>PIC24FJ128GA204, 128 Kbytes</td>
+                  </tr>
+                  <tr>
+                    <td align="center">15</td>
+                    <td>CPU (Data Memory)</td>
+                    <td>16.384936 Kbytes</td>
+                  </tr>
+                  <tr>
+                    <td align="center">16</td>
+                    <td>PLD (ATF1502ASL) Enhanced Output Logic Flexibility</td>
+                    <td>
+                      All 20 Flip-flops Feed Back Internally
+                      10 Flip-flops are also                       Available as Outputs
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">17</td>
+                    <td>LCU to RCU communication Protocol</td>
+                    <td>
+                      RS485, 8 data bits, 1 start bit, 2 stop
+                      bits, 1 parity bit and                       9600 Baud rate.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">18</td>
+                    <td>LCU to Cabinet communication Protocol</td>
+                    <td>
+                      RS485, 8 data bits, 1 start bit, 2 stop
+                      bits, 1 parity bit and                       9600 Baud rate.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">19</td>
+                    <td>Input power supply</td>
+                    <td>115 VAC, 50/60Hz, 1Ø or 380VAC/415VAC/450VAC 50Hz/60Hz, 3∅</td>
+                  </tr>
+                  <tr>
+                    <td align="center">20</td>
+                    <td>Power output</td>
+                    <td>50 W</td>
+                  </tr>
+                  <tr>
+                    <td align="center">21</td>
+                    <td>Current</td>
+                    <td>0.5A</td>
+                  </tr>
+                  <tr>
+                    <td align="center">22</td>
+                    <td>Power Factor</td>
+                    <td>>0.9</td>
+                  </tr>
+                  <tr>
+                    <td align="center">23</td>
+                    <td>Weight</td>
+                    <td>&lt;20 Kg.</td>
+                  </tr>
+                  <tr>
+                    <td align="center">24</td>
+                    <td>Dimensions</td>
+                    <td>455 mm (L) X 350 mm (W) X 150 mm (D)</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      <h6>Remote Control Unit (RCU)</h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">25</td>
+                    <td>CPU (Program Memory)</td>
+                    <td>PIC24FJ128GA204, 128 Kbytes</td>
+                  </tr>
+                  <tr>
+                    <td align="center">26</td>
+                    <td>CPU (Data Memory)</td>
+                    <td>16.384936 Kbytes</td>
+                  </tr>
+                  <tr>
+                    <td align="center">27</td>
+                    <td>PLD (ATF750C) Enhanced Output Logic Flexibility</td>
+                    <td>
+                      <para>All 20 Flip-flops Feedback Internally.</para
 >
-						  <table frame="box" rules="all">
-							  <colgroup>
-								  <col width="33*"/>
-								  <col width="33*"/>
-								  <col width="33*"/>
-							  </colgroup>
-							  <tbody>
-								  <tr>
-									  <td align="center">
-										  <h6>Sl.No.</h6>
-									  </td>
-									  <td>
-										  <h6>Parameter</h6>
-									  </td>
-									  <td>
-										  <h6>Specification</h6>
-									  </td>
-								  </tr>
-								  <tr>
-									  <td colspan="3">
-										  <h6>
-											  Expendable Device Launcher
-											  (EDL)
-										  </h6>
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">1</td>
-									  <td>No. of Barrels</td>
-									  <td>10 barrels per EDL</td>
-								  </tr>
-								  <tr>
-									  <td align="center">2</td>
-									  <td>Mass</td>
-									  <td>825 kg (Approx.)</td>
-								  </tr>
-								  <tr>
-									  <td colspan="3">
-										  <h6>Firing Valve Assembly (FVA)</h6
+                      <para>
+                        10 Flip-flops 											  are also
+                        Available as Outputs
+                      </para>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">28</td>
+                    <td>RCU to Port/Stbd EDL communication protocol</td>
+                    <td>
+                      RS485, 8 data bits, 1 start bit, 2 stop
+                      bits, 1 parity bit and                       9600 Baud rate
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">29</td>
+                    <td>Cabinet to RCU communication protocol</td>
+                    <td>
+                      RS485, 8 data bits, 1 start bit, 2 stop
+                      bits, 1 parity bit and                       9600 Baud rate
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">30</td>
+                    <td>Input power supply</td>
+                    <td>115 VAC, 50/60Hz, 1Ø or 380VAC/415VAC/450VAC 50Hz/60Hz,3∅</td>
+                  </tr>
+                  <tr>
+                    <td align="center">31</td>
+                    <td>Power output</td>
+                    <td>50 W</td>
+                  </tr>
+                  <tr>
+                    <td align="center">32</td>
+                    <td>Current</td>
+                    <td>0.5A</td>
+                  </tr>
+                  <tr>
+                    <td align="center">33</td>
+                    <td>Power Factor</td>
+                    <td>>0.9</td>
+                  </tr>
+                  <tr>
+                    <td align="center">34</td>
+                    <td>Weight</td>
+                    <td>20 Kg. Without External Mounting Bracket</td>
+                  </tr>
+                  <tr>
+                    <td align="center">35</td>
+                    <td>Dimensions</td>
+                    <td>430 mm (L) X 190 mm (W) X 330 mm (D)</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      <h6>Couplings</h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">36</td>
+                    <td>Charge Coupling</td>
+                    <td>1/4" BSP, Male union 60° cone, Material SS 316</td>
+                  </tr>
+                  <tr>
+                    <td align="center">37</td>
+                    <td>Vent Coupling</td>
+                    <td>3/8" BSP, Male union 60°cone, Material SS 316</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      <h6>Pressure regulator</h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">38</td>
+                    <td>Pressure regulator / reducer</td>
+                    <td>Max 300 bar, Min 90 bar</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      <h6>Console</h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">39</td>
+                    <td>Input power supply</td>
+                    <td>
+                      380VAC/415VAC/450VAC, 50-60Hz, 3-Phase,
+                      2-Wire, L to L; 115VAC,                       50-60 Hz, 1-Phase,
+                      2-wire, 										  L to L,
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">40</td>
+                    <td>Power Consumption</td>
+                    <td>&lt; 180VA</td>
+                  </tr>
+                  <tr>
+                    <td align="center">41</td>
+                    <td>Processor</td>
+                    <td>CPU: Intel Core i5-4402E</td>
+                  </tr>
+                  <tr>
+                    <td align="center">42</td>
+                    <td>Memory</td>
+                    <td>RAM: 4GB, SSD: 128GB</td>
+                  </tr>
+                  <tr>
+                    <td align="center">43</td>
+                    <td>Ethernet</td>
+                    <td>
+                      <para>
+                        LAN1: Intel I217M with Intel
+                        AMT 											  9.0 support
+                      </para>
+                      <para
 >
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">3</td>
-									  <td>Number of FVA’s</td>
-									  <td>10/EDL</td>
-								  </tr>
-								  <tr>
-									  <td align="center" rowspan="2">4</td>
-									  <td rowspan="2">Firing valve opening and performance</td>
-									  <td>
-										  Flow area should open minimum 63% in 15
-										  msec with flow opening                       of 12mm diameter.
-									  </td>
-								  </tr>
-								  <tr>
-									  <td>
-										  When venting the air pressure is reduced
-										  to &lt; 65kPA. Firing                       valve returns to closed
-										  position automatically after firing.
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">5</td>
-									  <td>Charging time</td>
-									  <td>
-										  The charging time should be less than 1
-										  minute for each reservoir                       for storing 1 litre
-										  dry compressed air at 90bar pressure.
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">6</td>
-									  <td>Leakage</td>
-									  <td>
-										  FVA once charged up to 105bar, there should
-										  be no significant                       leakage for up to 45 days.
-										  2% leakage up to 60 days is allowed.
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">7</td>
-									  <td>Selector valve</td>
-									  <td>5-way mechanical selector valve (Safe//Charge/Vent/Arm)</td>
-								  </tr>
-								  <tr>
-									  <td align="center">8</td>
-									  <td>Solenoid Valve</td>
-									  <td>24V DC/ 0.371A</td>
-								  </tr>
-								  <tr>
-									  <td align="center" rowspan="2">9</td>
-									  <td rowspan="2">Firing Lines Output</td>
-									  <td>Current: 500mA (Max.)</td>
-								  </tr>
-								  <tr>
-									  <td>Duration: 10 Sec.</td>
-								  </tr>
-								  <tr>
-									  <td align="center">10</td>
-									  <td>Mass</td>
-									  <td>&lt; 20 Kg (Without Interface Sleeve assembly and EAD)</td>
-								  </tr>
-								  <tr>
-									  <td align="center">11</td>
-									  <td>Dimensions</td>
-									  <td>
-										  FVA assembly (FVA and Interface sleeve)
-										  fits in a cylindrical                       space of diameter 200
-										  mm (approx.) and length 610 mm (approx.).
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center" rowspan="2">12</td>
-									  <td rowspan="2">Interface</td>
-									  <td>
-										  The EDL housing is mounted on the plinth
-										  which is welded to the                       ship’s deck.
-									  </td>
-								  </tr>
-								  <tr>
-									  <td>
-										  The FVA to EDL interface is through a bolted
-										  joint provided on                       the interface flange.
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">13</td>
-									  <td>Device detection</td>
-									  <td>
-										  Has provision for detection of eight types
-										  of EADs (Stores) mounted                       in the launcher barrel.
-									  </td>
-								  </tr>
-								  <tr>
-									  <td colspan="3">
-										  <h6>Local Control Unit (LCU)</h6
+                        LAN2: Intel I210-AT 											  PCIe controller
+                      </para>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">44</td>
+                    <td>Graphics Engine Card</td>
+                    <td>Intel HD Graphics Gen 7.5 graphics card memory size 2GB</td>
+                  </tr>
+                  <tr>
+                    <td align="center">45</td>
+                    <td>Display</td>
+                    <td>20.1” Color LCD Display, 5-wire Resistive Touch Screen</td>
+                  </tr>
+                  <tr>
+                    <td align="center">46</td>
+                    <td>Display output</td>
+                    <td>VGA, upto 1920 x 1200 @ 60Hz</td>
+                  </tr>
+                  <tr>
+                    <td align="center">47</td>
+                    <td>Speakers</td>
+                    <td>8 ohms, 15W</td>
+                  </tr>
+                  <tr>
+                    <td align="center">48</td>
+                    <td>Alt. MMI control</td>
+                    <td>Mouse Pointer</td>
+                  </tr>
+                  <tr>
+                    <td align="center">49</td>
+                    <td>Operating System</td>
+                    <td>Windows 7 64 bit Professional</td>
+                  </tr>
+                  <tr>
+                    <td align="center">50</td>
+                    <td>Console Dimension</td>
+                    <td>510mm (L) x 510mm(H) x 225mm (D)</td>
+                  </tr>
+                  <tr>
+                    <td align="center">51</td>
+                    <td>Console Mounting Bracket Dimension</td>
+                    <td>523mm (L) x 584mm(H) x 174mm (D)</td>
+                  </tr>
+                  <tr>
+                    <td align="center">52</td>
+                    <td>Console Weight</td>
+                    <td>35 ± 1 kg (Console + Mounting Bracket + Keyboard)</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      <h6>Winch</h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">53</td>
+                    <td>Type</td>
+                    <td>Electrical Winch for Sonar System</td>
+                  </tr>
+                  <tr>
+                    <td align="center">54</td>
+                    <td>Input Supply</td>
+                    <td>380 VAC / 415 VAC / 450 VAC, 50Hz / 60Hz, 3∅ (Delta configuration)</td>
+                  </tr>
+                  <tr>
+                    <td align="center">55</td>
+                    <td>Length of Tow Cable</td>
+                    <td>920 meters (Approx.), with different diameters of cable</td>
+                  </tr>
+                  <tr>
+                    <td align="center">56</td>
+                    <td>Weight of cable load</td>
+                    <td>1 Ton</td>
+                  </tr>
+                  <tr>
+                    <td align="center">57</td>
+                    <td>Drum Rotational Speed</td>
+                    <td>10-15 RPM</td>
+                  </tr>
+                  <tr>
+                    <td align="center">58</td>
+                    <td>Static brake load</td>
+                    <td>44.5 KN at 350mm radius in static condition</td>
+                  </tr>
+                  <tr>
+                    <td align="center">59</td>
+                    <td>Winch to Processing Cabinet electrical communication protocol</td>
+                    <td>
+                      RS485, 8 data bits, 1 start bit, 2 stop
+                      bits, even parity and                       9600 Baud rate
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">60</td>
+                    <td>Winch to Processing Cabinet Optical Communication</td>
+                    <td>
+                      62.5/125μm, 1300 nm, Sensitivity of Optical
+                      Repeater: -32 dB,                       Output: between 0 to -8 dBm.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">61</td>
+                    <td>Maximum Recovery Time</td>
+                    <td>25 Min.</td>
+                  </tr>
+                  <tr>
+                    <td align="center">62</td>
+                    <td>Maximum Deployment Time</td>
+                    <td>30 Min.</td>
+                  </tr>
+                  <tr>
+                    <td align="center">63</td>
+                    <td>Minimum bend radius of cable</td>
+                    <td>350 mm</td>
+                  </tr>
+                  <tr>
+                    <td align="center">64</td>
+                    <td>Outer/Inner diameter of drum (Incl. Lebus)</td>
+                    <td>742/661 mm</td>
+                  </tr>
+                  <tr>
+                    <td align="center">65</td>
+                    <td>Outer diameter of flange</td>
+                    <td>1630 mm</td>
+                  </tr>
+                  <tr>
+                    <td align="center">66</td>
+                    <td>Overall weight (Excluding Winch Plinth Assy.)</td>
+                    <td>≤3900kg</td>
+                  </tr>
+                  <tr>
+                    <td align="center">67</td>
+                    <td>Envelope Size (Including Winch Plinth ASM)</td>
+                    <td>2540 (Deep) X 1910 (Wide) X 1850 (Height)</td>
+                  </tr>
+                  <tr>
+                    <td align="center">68</td>
+                    <td>Electrical Motor Capacity</td>
+                    <td>22KW, 750 RPM with Electric Brake</td>
+                  </tr>
+                  <tr>
+                    <td align="center">69</td>
+                    <td>Gear Box</td>
+                    <td>Worm and Worm Gear Box</td>
+                  </tr>
+                  <tr>
+                    <td align="center">70</td>
+                    <td>Band Brake Holding Capacity</td>
+                    <td>Capable of holding Static Load of 44.5KN.</td>
+                  </tr>
+                  <tr>
+                    <td align="left" colspan="3">
+                      <h6>Cabinet</h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">71</td>
+                    <td>Input power supply</td>
+                    <td>380/415/450V 3 Phase 50/60Hz</td>
+                  </tr>
+                  <tr>
+                    <td align="center">72</td>
+                    <td>Ethernet</td>
+                    <td>CP6924 Ethernet Switch</td>
+                  </tr>
+                  <tr>
+                    <td align="center">73</td>
+                    <td>Cabinet Dimension</td>
+                    <td>1215mm x 635mm x 620mm</td>
+                  </tr>
+                  <tr>
+                    <td align="center">74</td>
+                    <td>Cabinet Weight</td>
+                    <td>271 Kg</td>
+                  </tr>
+                  <tr>
+                    <td align="center">75</td>
+                    <td>Processor</td>
+                    <td>Kontron CP6004</td>
+                  </tr>
+                  <tr>
+                    <td align="left" colspan="3">
+                      <h6>Towed Array</h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">76</td>
+                    <td>Towed Array Dimension</td>
+                    <td>
+                      <para>FOTC – 640m</para>
+                      <para>Sensor Module – 55m</para>
+                      <para
+>VIM x2 – 24m</para>
+                      <para>EOCM – 1.5m</para>
+                      <para>Rope Drogue - 30m</para
 >
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">14</td>
-									  <td>CPU (Program Memory)</td>
-									  <td>PIC24FJ128GA204, 128 Kbytes</td>
-								  </tr>
-								  <tr>
-									  <td align="center">15</td>
-									  <td>CPU (Data Memory)</td>
-									  <td>16.384936 Kbytes</td>
-								  </tr>
-								  <tr>
-									  <td align="center">16</td>
-									  <td>PLD (ATF1502ASL) Enhanced Output Logic Flexibility</td>
-									  <td>
-										  All 20 Flip-flops Feed Back Internally
-										  10 Flip-flops are also                       Available as Outputs
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">17</td>
-									  <td>LCU to RCU communication Protocol</td>
-									  <td>
-										  RS485, 8 data bits, 1 start bit, 2 stop
-										  bits, 1 parity bit and                       9600 Baud rate.
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">18</td>
-									  <td>LCU to Cabinet communication Protocol</td>
-									  <td>
-										  RS485, 8 data bits, 1 start bit, 2 stop
-										  bits, 1 parity bit and                       9600 Baud rate.
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">19</td>
-									  <td>Input power supply</td>
-									  <td>115 VAC, 50/60Hz, 1Ø or 380VAC/415VAC/450VAC 50Hz/60Hz, 3∅</td>
-								  </tr>
-								  <tr>
-									  <td align="center">20</td>
-									  <td>Power output</td>
-									  <td>50 W</td>
-								  </tr>
-								  <tr>
-									  <td align="center">21</td>
-									  <td>Current</td>
-									  <td>0.5A</td>
-								  </tr>
-								  <tr>
-									  <td align="center">22</td>
-									  <td>Power Factor</td>
-									  <td>>0.9</td>
-								  </tr>
-								  <tr>
-									  <td align="center">23</td>
-									  <td>Weight</td>
-									  <td>&lt;20 Kg.</td>
-								  </tr>
-								  <tr>
-									  <td align="center">24</td>
-									  <td>Dimensions</td>
-									  <td>455 mm (L) X 350 mm (W) X 150 mm (D)</td>
-								  </tr>
-								  <tr>
-									  <td colspan="3">
-										  <h6>Remote Control Unit (RCU)</h6
->
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">25</td>
-									  <td>CPU (Program Memory)</td>
-									  <td>PIC24FJ128GA204, 128 Kbytes</td>
-								  </tr>
-								  <tr>
-									  <td align="center">26</td>
-									  <td>CPU (Data Memory)</td>
-									  <td>16.384936 Kbytes</td>
-								  </tr>
-								  <tr>
-									  <td align="center">27</td>
-									  <td>PLD (ATF750C) Enhanced Output Logic Flexibility</td>
-									  <td>
-										  <para>All 20 Flip-flops Feedback Internally.</para
->
-										  <para>
-											  10 Flip-flops
-											  are also Available as Outputs
-										  </para>
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">28</td>
-									  <td>RCU to Port/Stbd EDL communication protocol</td>
-									  <td>
-										  RS485, 8 data bits, 1 start bit, 2 stop
-										  bits, 1 parity bit and                       9600 Baud rate
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">29</td>
-									  <td>Cabinet to RCU communication protocol</td>
-									  <td>
-										  RS485, 8 data bits, 1 start bit, 2 stop
-										  bits, 1 parity bit and                       9600 Baud rate
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">30</td>
-									  <td>Input power supply</td>
-									  <td>115 VAC, 50/60Hz, 1Ø or 380VAC/415VAC/450VAC 50Hz/60Hz,3∅</td>
-								  </tr>
-								  <tr>
-									  <td align="center">31</td>
-									  <td>Power output</td>
-									  <td>50 W</td>
-								  </tr>
-								  <tr>
-									  <td align="center">32</td>
-									  <td>Current</td>
-									  <td>0.5A</td>
-								  </tr>
-								  <tr>
-									  <td align="center">33</td>
-									  <td>Power Factor</td>
-									  <td>>0.9</td>
-								  </tr>
-								  <tr>
-									  <td align="center">34</td>
-									  <td>Weight</td>
-									  <td>20 Kg. Without External Mounting Bracket</td>
-								  </tr>
-								  <tr>
-									  <td align="center">35</td>
-									  <td>Dimensions</td>
-									  <td>430 mm (L) X 190 mm (W) X 330 mm (D)</td>
-								  </tr>
-								  <tr>
-									  <td colspan="3">
-										  <h6>Couplings</h6>
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">36</td>
-									  <td>Charge Coupling</td>
-									  <td>1/4" BSP, Male union 60° cone, Material SS 316</td>
-								  </tr>
-								  <tr>
-									  <td align="center">37</td>
-									  <td>Vent Coupling</td>
-									  <td>3/8" BSP, Male union 60°cone, Material SS 316</td>
-								  </tr>
-								  <tr>
-									  <td colspan="3">
-										  <h6>Pressure regulator</h6
->
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">38</td>
-									  <td>Pressure regulator / reducer</td>
-									  <td>Max 300 bar, Min 90 bar</td>
-								  </tr>
-								  <tr>
-									  <td colspan="3">
-										  <h6>Console</h6>
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">39</td>
-									  <td>Input power supply</td>
-									  <td>
-										  380VAC/415VAC/450VAC, 50-60Hz, 3-Phase,
-										  2-Wire, L to L; 115VAC,                       50-60 Hz, 1-Phase, 2-wire,
-										  L to L,
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">40</td>
-									  <td>Power Consumption</td>
-									  <td>&lt; 180VA</td>
-								  </tr>
-								  <tr>
-									  <td align="center">41</td>
-									  <td>Processor</td>
-									  <td>CPU: Intel Core i5-4402E</td>
-								  </tr>
-								  <tr>
-									  <td align="center">42</td>
-									  <td>Memory</td>
-									  <td>RAM: 4GB, SSD: 128GB</td>
-								  </tr>
-								  <tr>
-									  <td align="center">43</td>
-									  <td>Ethernet</td>
-									  <td>
-										  <para>
-											  LAN1: Intel I217M with Intel AMT
-											  9.0 support
-										  </para>
-										  <para>
-											  LAN2: Intel I210-AT
-											  PCIe controller
-										  </para>
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">44</td>
-									  <td>Graphics Engine Card</td>
-									  <td>Intel HD Graphics Gen 7.5 graphics card memory size 2GB</td>
-								  </tr>
-								  <tr>
-									  <td align="center">45</td>
-									  <td>Display</td>
-									  <td>20.1” Color LCD Display, 5-wire Resistive Touch Screen</td>
-								  </tr>
-								  <tr>
-									  <td align="center">46</td>
-									  <td>Display output</td>
-									  <td>VGA, upto 1920 x 1200 @ 60Hz</td>
-								  </tr>
-								  <tr>
-									  <td align="center">47</td>
-									  <td>Speakers</td>
-									  <td>8 ohms, 15W</td>
-								  </tr>
-								  <tr>
-									  <td align="center">48</td>
-									  <td>Alt. MMI control</td>
-									  <td>Mouse Pointer</td>
-								  </tr>
-								  <tr>
-									  <td align="center">49</td>
-									  <td>Operating System</td>
-									  <td>Windows 7 64 bit Professional</td>
-								  </tr>
-								  <tr>
-									  <td align="center">50</td>
-									  <td>Console Dimension</td>
-									  <td>510mm (L) x 510mm(H) x 225mm (D)</td>
-								  </tr>
-								  <tr>
-									  <td align="center">51</td>
-									  <td>Console Mounting Bracket Dimension</td>
-									  <td>523mm (L) x 584mm(H) x 174mm (D)</td>
-								  </tr>
-								  <tr>
-									  <td align="center">52</td>
-									  <td>Console Weight</td>
-									  <td>35 ± 1 kg (Console + Mounting Bracket + Keyboard)</td>
-								  </tr>
-								  <tr>
-									  <td colspan="3">
-										  <h6>Winch</h6>
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">53</td>
-									  <td>Type</td>
-									  <td>Electrical Winch for Sonar System</td>
-								  </tr>
-								  <tr>
-									  <td align="center">54</td>
-									  <td>Input Supply</td>
-									  <td>380 VAC / 415 VAC / 450 VAC, 50Hz / 60Hz, 3∅ (Delta configuration)</td>
-								  </tr>
-								  <tr>
-									  <td align="center">55</td>
-									  <td>Length of Tow Cable</td>
-									  <td>920 meters (Approx.), with different diameters of cable</td>
-								  </tr>
-								  <tr>
-									  <td align="center">56</td>
-									  <td>Weight of cable load</td>
-									  <td>1 Ton</td>
-								  </tr>
-								  <tr>
-									  <td align="center">57</td>
-									  <td>Drum Rotational Speed</td>
-									  <td>10-15 RPM</td>
-								  </tr>
-								  <tr>
-									  <td align="center">58</td>
-									  <td>Static brake load</td>
-									  <td>44.5 KN at 350mm radius in static condition</td>
-								  </tr>
-								  <tr>
-									  <td align="center">59</td>
-									  <td>Winch to Processing Cabinet electrical communication protocol</td>
-									  <td>
-										  RS485, 8 data bits, 1 start bit, 2 stop
-										  bits, even parity and                       9600 Baud rate
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">60</td>
-									  <td>Winch to Processing Cabinet Optical Communication</td>
-									  <td>
-										  62.5/125μm, 1300 nm, Sensitivity of Optical
-										  Repeater: -32 dB,                       Output: between 0 to -8 dBm.
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">61</td>
-									  <td>Maximum Recovery Time</td>
-									  <td>25 Min.</td>
-								  </tr>
-								  <tr>
-									  <td align="center">62</td>
-									  <td>Maximum Deployment Time</td>
-									  <td>30 Min.</td>
-								  </tr>
-								  <tr>
-									  <td align="center">63</td>
-									  <td>Minimum bend radius of cable</td>
-									  <td>350 mm</td>
-								  </tr>
-								  <tr>
-									  <td align="center">64</td>
-									  <td>Outer/Inner diameter of drum (Incl. Lebus)</td>
-									  <td>742/661 mm</td>
-								  </tr>
-								  <tr>
-									  <td align="center">65</td>
-									  <td>Outer diameter of flange</td>
-									  <td>1630 mm</td>
-								  </tr>
-								  <tr>
-									  <td align="center">66</td>
-									  <td>Overall weight (Excluding Winch Plinth Assy.)</td>
-									  <td>≤3900kg</td>
-								  </tr>
-								  <tr>
-									  <td align="center">67</td>
-									  <td>Envelope Size (Including Winch Plinth ASM)</td>
-									  <td>2540 (Deep) X 1910 (Wide) X 1850 (Height)</td>
-								  </tr>
-								  <tr>
-									  <td align="center">68</td>
-									  <td>Electrical Motor Capacity</td>
-									  <td>22KW, 750 RPM with Electric Brake</td>
-								  </tr>
-								  <tr>
-									  <td align="center">69</td>
-									  <td>Gear Box</td>
-									  <td>Worm and Worm Gear Box</td>
-								  </tr>
-								  <tr>
-									  <td align="center">70</td>
-									  <td>Band Brake Holding Capacity</td>
-									  <td>Capable of holding Static Load of 44.5KN.</td>
-								  </tr>
-							  </tbody>
-						  </table>
-					  </para>
-				  </content>
-			  </section>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">77</td>
+                    <td>Towed Array Weight</td>
+                    <td>358.6 Kg +/- 63.2 Kg</td>
+                  </tr>
+                  <tr>
+                    <td align="center">78</td>
+                    <td>Minimum Bend Radius of Cable</td>
+                    <td>
+                      <para>FOTC – 350 mm</para>
+                      <para>Towed Array – 510mm</para>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </para>
+          </content>
+        </section>
 			  <section id="1.3.2 Brief System Description" level="4">
 				  <title>1.3.2 Brief System Description</title>
 				  <content>
@@ -823,70 +868,82 @@
 						  </h6>
 					  </para>
 					  <para>
-						  <table frame="box" rules="all">
-							  <colgroup>
-								  <col/>
-								  <col/>
-								  <col/>
-								  <col/>
-							  </colgroup>
-							  <tbody>
-								  <tr>
-									  <td align="center">
-										  <h6>Sl.No.</h6>
-									  </td>
-									  <td>
-										  <h6>Unit description</h6>
-									  </td>
-									  <td>
-										  <h6>Location</h6>
-									  </td>
-									  <td>
-										  <h6>Qty</h6>
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">1</td>
-									  <td>Expendable Device Launcher (EDL)</td>
-									  <td>Above deck</td>
-									  <td>2</td>
-								  </tr>
-								  <tr>
-									  <td rowspan="2"></td>
-									  <td>a) Firing Valve Assembly (FVA)</td>
-									  <td>EDL</td>
-									  <td>10/EDL</td>
-								  </tr>
-								  <tr>
-									  <td>b) Local Control Unit (LCU)</td>
-									  <td>EDL</td>
-									  <td>1/EDL</td>
-								  </tr>
-								  <tr>
-									  <td align="center">2</td>
-									  <td>Remote Control Unit (RCU)</td>
-									  <td>Bridge / Ops room</td>
-									  <td>1 per launcher</td>
-								  </tr>
-								  <tr>
-									  <td align="center">3</td>
-									  <td>Console</td>
-									  <td>Bridge / Ops room</td>
-									  <td>2</td>
-								  </tr>
-								  <tr>
-									  <td align="center" rowspan="2">4</td>
-									  <td>Winch</td>
-									  <td>Stern of the ship</td>
-									  <td>1</td>
-								  </tr>
-								  <tr>
-									  <td>Fairlead</td>
-									  <td>Stern of the ship</td>
-									  <td>1</td>
-								  </tr>
-							  </tbody>
-						  </table>
+              <table frame="box" rules="all">
+                <colgroup>
+                  <col/>
+                  <col/>
+                  <col/>
+                  <col/>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td align="center">
+                      <h6>Sl.No.</h6>
+                    </td>
+                    <td>
+                      <h6>Unit description</h6>
+                    </td>
+                    <td>
+                      <h6>Location</h6>
+                    </td>
+                    <td>
+                      <h6>Qty</h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">1</td>
+                    <td>Expendable Device Launcher (EDL)</td>
+                    <td>Above deck</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2"></td>
+                    <td>a) Firing Valve Assembly (FVA)</td>
+                    <td>EDL</td>
+                    <td>10/EDL</td>
+                  </tr>
+                  <tr>
+                    <td>b) Local Control Unit (LCU)</td>
+                    <td>EDL</td>
+                    <td>1/EDL</td>
+                  </tr>
+                  <tr>
+                    <td align="center">2</td>
+                    <td>Remote Control Unit (RCU)</td>
+                    <td>Bridge / Ops room</td>
+                    <td>1 per launcher</td>
+                  </tr>
+                  <tr>
+                    <td align="center">3</td>
+                    <td>Console</td>
+                    <td>Bridge / Ops room</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td align="center" rowspan="2">4</td>
+                    <td>Winch</td>
+                    <td>Stern of the ship</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>Fairlead</td>
+                    <td>Stern of the ship</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td align="center">5</td>
+                    <td>Cabinet</td>
+                    <td>Ship Dependant</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td align="center">6</td>
+                    <td>Towed Array</td>
+                    <td>On the winch in a compartment or deck near the stern</td>
+                    <td>1</td>
+                  </tr>
+                </tbody>
+              </table>
 					  </para>
 					  <para>
 						  <note>
@@ -1337,14 +1394,89 @@
 						  </para>
 					  </content>
 				  </section>
-				  <section id="1.3.2.5" level="5">
-
-
-				  </section>
-				  <section id="1.3.2.6" level="5">
-
-
-				  </section>
+          <section id="1.3.2.5 Cabinet" level="5">
+            <title>1.3.2.5 — Cabinet</title>
+            <content>
+              <para>
+                The Cabinet houses the electronics that carry out NTDS
+                signal processing, control and monitoring functions. The Cabinet provides
+                the following functions:
+              </para>
+              <para>
+                <ol type="a">
+                  <li>Power supplies for the Cabinet and TA.</li>
+                  <li>Processing of signals received from the TA.</li>
+                  <li>Data link to the Winch to process the Tow information.</li>
+                  <li>
+                    Data link to the Ops Room Console providing the Command team with
+                    torpedo threat evaluation.
+                  </li>
+                  <li>
+                    Data link to the Bridge Console providing the Officer of the Watch
+                    (OOW) with the torpedo threat evaluation.
+                  </li>
+                  <li>
+                    Data link to the RCU to enable countermeasure launch control from
+                    the Control Console.
+                  </li>
+                  <li>Data link to the EDLs for the reception of the EDL status.</li>
+                  <li>Data link to the GPS for the reception of own ship position data.</li>
+                  <li>
+                    Data link to the ship’s CMS for the provision of torpedo threat
+                    evaluation.
+                  </li>
+                </ol>
+              </para>
+              <para>
+                <figure>
+                  <graphic fileref="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/fig_1_3_2_5.png"></graphic>
+                  <figtitle>Figure xx - Pictorial View of Cabinet</figtitle>
+                </figure>
+              </para>
+            </content>
+          </section>
+          <section id="1.3.2.6 Towed Array" level="5">
+            <title>1.3.2.6 – Towed Array</title>
+            <content>
+              <para>
+                The Towed Array is used to detect threats and consists
+                of the following parts:
+              </para>
+              <para>
+                <ul type="DISC">
+                  <li>
+                    <para>Electro Optical Converter Module (EOCM)</para>
+                    <para>
+                      Converts
+                      the electrical signal received by the array into data that can be
+                      processed by the cabinet.
+                    </para>
+                  </li>
+                  <li>Array Tow (2 off – one Forward and one Aft).</li>
+                  <li>
+                    <para>Sensor Module (SM).</para>
+                    <para>
+                      Carries the array of hydrophones
+                      to conduct detection for the NTDS system
+                    </para>
+                  </li>
+                  <li>
+                    <para>Rope Drogue</para>
+                    <para>
+                      The Drogue rope helps improve stability
+                      for the Towed Array.
+                    </para>
+                  </li>
+                </ul>
+              </para>
+              <para>
+                <figure>
+                  <graphic fileref="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/fig_1_3_2_6.png"></graphic>
+                  <figtitle>Figure xx - Pictorial View of Towed Array</figtitle>
+                </figure>
+              </para>
+            </content>
+          </section>
 
 				  
 			  </section>
@@ -4977,14 +5109,7 @@
                   <figtitle>Fig. 1.80: Inner view of MCP</figtitle>
                 </figure>
               </para>
-              <para>
-                <figure>
-                  <graphic
-                  fileref="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/fig_1_81.gif"
-  ></graphic>
-                  <figtitle>Fig. 1.81: Block diagram of MCP</figtitle>
-                </figure>
-              </para>
+              
             </content>
             <section id="1.4.3.10.1 Control Card" level="6">
               <title>1.4.3.10.1 Control Card</title>
@@ -5554,12 +5679,84 @@
           </section>
 
         </section>
-        <section id="1.4.5" level="4">
+        <section id="1.4.5 Cabinet" level="4">
+          <title>1.4.5 – Cabinet</title>
+          <content>
 
-
+            <para>
+              Introduction to Cabinet video
+              <a onclick="javascript:parent.VideoFrame(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Video/videos/V28_intro_Cabinet.mp4&quot;);parent.masterframe.rows=&quot;70%,30%&quot;" actuate="uSer">
+                Click here <img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/video.gif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+            <para
+>
+              The Cabinet houses the electronics that carry out NTDS signal processing,
+              control and monitoring functionality.
+            </para>
+            <para>
+              The Cabinet provides
+              the following functions:
+            </para>
+            <para>
+              <ol type="a">
+                <li>Processing of signals received from the TA.</li>
+                <li>Data link to Winch to process the Tow Scope information.</li>
+                <li>
+                  Data link to the Ops Room Console providing the Command team with
+                  torpedo threat evaluation.
+                </li>
+                <li>
+                  Data link to the Bridge Console providing the Officer of the Watch
+                  (OOW) with the torpedo threat evaluation.
+                </li>
+                <li>Data link to the EDLs for the reception of the EDL status.</li>
+                <li>
+                  Data link to the RCU to enable countermeasure launch control from
+                  the Control console.
+                </li>
+                <li>
+                  Data link to the Global Positioning System (GPS) for the reception
+                  of own ship position data.
+                </li>
+                <li>
+                  Data link to the ship`s CMS for the provision of torpedo threat
+                  evaluation
+                </li>
+              </ol>
+            </para>
+            <para>
+              <figure>
+                <graphic fileref="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/fig_1_4_5.png"></graphic>
+              </figure>
+            </para>
+          </content>
         </section>
-        <section id="1.4.6" level="4">
-
+        <section id="1.4.6  Towed Array" level="4">
+          <title>1.4.6 – Towed Array</title>
+          <content>
+            <para>
+              Introduction to Towed Array video
+              <a onclick="javascript:parent.VideoFrame(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Video/videos/V29_intro_Towed_Array.mp4&quot;);parent.masterframe.rows=&quot;70%,30%&quot;" actuate="uSer">
+                Click here <img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/video.gif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+            <para>
+              <h4>1.4.6.1</h4>
+            </para>
+            <para>
+              <h6>The TA is made up of four constituent parts:</h6>
+            </para
+>
+            <para>
+              <ol type="a">
+                <li>Array Tow (2 off).</li>
+                <li>Electro Optical Converter Module (EOCM).</li>
+                <li>Sensor Module (SM).</li>
+                <li>Rope Drogue.</li>
+              </ol>
+            </para>
+          </content>
 
         </section>
 
@@ -5580,70 +5777,77 @@
 						  ease of transport and handling as described below:
 					  </para>
 					  <para>
-						  <table
-				  frame="box" rules="all">
-							  <colgroup>
-								  <col width="21*"/>
-								  <col width="77*"/>
-							  </colgroup>
-							  <tbody>
-								  <tr>
-									  <td align="center">
-										  <h6>Sl. No.</h6>
-									  </td>
-									  <td>
-										  <h6>Unit description</h6>
-									  </td>
-								  </tr>
-								  <tr>
-									  <td align="center">1</td>
-									  <td>Launcher</td>
-								  </tr>
-								  <tr>
-									  <td align="center">a)</td>
-									  <td>Expendable Device Launcher (EDL)</td>
-								  </tr>
-								  <tr>
-									  <td rowspan="2"></td>
-									  <td>i)	Firing Fire Valve Assembly (FVA) </td>
-								  </tr>
-								  <tr>
-									  <td>ii)	Local Control Unit (LCU)</td>
-								  </tr>
-								  <tr>
-									  <td align="center">b)</td>
-									  <td>EDL Plinth</td>
-								  </tr>
-								  <tr>
-									  <td align="center">c)</td>
-									  <td>Remote Control Unit (RCU)</td>
-								  </tr>
-								  <tr>
-									  <td align="center">2</td>
-									  <td>Winch - Gear Box Assembly</td>
-								  </tr>
-								  <tr>
-									  <td align="center">3</td>
-									  <td>Winch - Level Wind Assembly</td>
-								  </tr>
-								  <tr>
-									  <td align="center">4</td>
-									  <td>Winch - Plinth</td>
-								  </tr>
-								  <tr>
-									  <td align="center">5</td>
-									  <td>Fairlead with plinth</td>
-								  </tr>
-								  <tr>
-									  <td align="center">6</td>
-									  <td>Console</td>
-								  </tr>
-								  <tr>
-									  <td align="center">7</td>
-									  <td>Miscellaneous NTDS items </td>
-								  </tr>
-							  </tbody>
-						  </table>
+              <table frame="box" rules="all">
+                <colgroup>
+                  <col width="21*"/>
+                  <col width="77*"/>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td align="center">
+                      <h6>Sl. No.</h6>
+                    </td>
+                    <td>
+                      <h6>Unit description</h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">1</td>
+                    <td>Launcher</td>
+                  </tr>
+                  <tr>
+                    <td align="center">a)</td>
+                    <td>Expendable Device Launcher (EDL)</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2"></td>
+                    <td>i)	Firing Fire Valve Assembly (FVA) </td>
+                  </tr>
+                  <tr>
+                    <td>ii)	Local Control Unit (LCU)</td>
+                  </tr>
+                  <tr>
+                    <td align="center">b)</td>
+                    <td>EDL Plinth</td>
+                  </tr>
+                  <tr>
+                    <td align="center">c)</td>
+                    <td>Remote Control Unit (RCU)</td>
+                  </tr>
+                  <tr>
+                    <td align="center">2</td>
+                    <td>Winch - Gear Box Assembly</td>
+                  </tr>
+                  <tr>
+                    <td align="center">3</td>
+                    <td>Winch - Level Wind Assembly</td>
+                  </tr>
+                  <tr>
+                    <td align="center">4</td>
+                    <td>Winch - Plinth</td>
+                  </tr>
+                  <tr>
+                    <td align="center">5</td>
+                    <td>Fairlead with plinth</td>
+                  </tr>
+                  <tr>
+                    <td align="center">6</td>
+                    <td>Console</td>
+                  </tr>
+                  <tr>
+                    <td align="center">7</td>
+                    <td>Miscellaneous NTDS items </td>
+                  </tr>
+                  <tr>
+                    <td align="center">8</td>
+                    <td>Cabinet</td>
+                  </tr>
+                  <tr>
+                    <td align="center">9</td>
+                    <td>Towed Array</td>
+                  </tr>
+                </tbody>
+              </table>
 					  </para>
 				  </content>
 				  <section id="2.1.1 Pre-packaging requirements" level="4">
@@ -5704,151 +5908,173 @@
 
 					  </content>
 				  </section>
-				  <section id="2.1.2 Dimensions and Weights of Main Units of NTDS"
-				  level="4">
-					  <title>2.1.2 Dimensions and Weights of Main Units of NTDS</title>
-					  <content>
-						  <para>
-							  The dimensions &amp; weights of main units and box
-							  size are given in the Table-2.1(a) below:
-						  </para>
-						  <para>
-							  <h6>
-								  Table-2.1(a):
-								  Dimensions and Weights of Main Units of NTDS and Box Size
-							  </h6>
-						  </para
+          <section id="2.1.2 Dimensions and Weights of Main Units of NTDS"
+				level="4">
+            <title>2.1.2 Dimensions and Weights of Main Units of NTDS</title>
+            <content>
+              <para>
+                The dimensions &amp; weights of main units and box
+                size are given in the Table-2.1(a) below:
+              </para>
+              <para>
+                <h6>
+                  Table-2.1(a):
+                  Dimensions and Weights of Main Units of NTDS and Box Size
+                </h6>
+              </para
   >
-						  <para>
-							  <table frame="box" rules="all">
-								  <colgroup>
-									  <col/>
-									  <col/>
-									  <col/>
-									  <col/>
-									  <col/>
-									  <col/>
-									  <col/>
-									  <col/>
-									  <col/>
-								  </colgroup>
-								  <tbody>
-									  <tr>
-										  <td rowspan="2" align="center">
-											  <h6>Sl. No.</h6>
-										  </td>
-										  <td rowspan="2">
-											  <h6>Unit</h6>
-										  </td>
-										  <td rowspan="2">
-											  <h6>Qty</h6>
-										  </td>
-										  <td colspan="3">
-											  <h6>Dimensions in mm</h6>
-										  </td>
-										  <td rowspan="2">
-											  <h6>Wt. in Kgs Approx.</h6>
-										  </td>
-										  <td rowspan="2">
-											  <h6>Box Size  (Ft.)</h6>
-										  </td>
-										  <td rowspan="2">
-											  <h6>Wt. (Job +Box) Kgs</h6>
-										  </td>
-									  </tr>
-									  <tr>
-										  <td>
-											  <h6>Length</h6>
-										  </td>
-										  <td>
-											  <h6>Width</h6>
-										  </td>
-										  <td>
-											  <h6>Height/ Depth</h6>
-										  </td>
-									  </tr>
-									  <tr>
-										  <td align="center">1</td>
-										  <td>Launcher (EDL with Plinth, LCU,   10 no’s FVA’s) </td>
-										  <td>2 (P&amp;S)</td>
-										  <td>1685</td>
-										  <td>1164 (with doors closed)</td>
-										  <td>1660</td>
-										  <td>925</td>
-										  <td>6.5 (L)x4.5(W)x6(H)</td>
-										  <td>1075</td>
-									  </tr>
-									  <tr>
-										  <td align="center">2</td>
-										  <td>Remote Control Unit </td>
-										  <td>1/2EDL’s</td>
-										  <td>430</td>
-										  <td>190</td>
-										  <td>330</td>
-										  <td>20</td>
-										  <td>2.2 (L)x1(W)x1.5(H)</td>
-										  <td>34</td>
-									  </tr>
-									  <tr>
-										  <td align="center">3</td>
-										  <td>Winch - Gear Box Assembly </td>
-										  <td>1</td>
-										  <td>2540</td>
-										  <td>1910</td>
-										  <td>1650</td>
-										  <td>3400</td>
-										  <td>9(L)x7(W)x6.5(H)</td>
-										  <td>3650</td>
-									  </tr>
-									  <tr>
-										  <td align="center">4</td>
-										  <td>Winch - Level Wind Assembly </td>
-										  <td>1</td>
-										  <td>525</td>
-										  <td>1910</td>
-										  <td>1650</td>
-										  <td>500</td>
-										  <td>2.5(L)x7(W)x6.5(H)</td>
-										  <td>700</td>
-									  </tr>
-									  <tr>
-										  <td align="center">5</td>
-										  <td>Winch - Plinth </td>
-										  <td>1</td>
-										  <td>2540</td>
-										  <td>1910</td>
-										  <td>200</td>
-										  <td>1044</td>
-										  <td>9(L)x7(W)x2(H)</td>
-										  <td>1244</td>
-									  </tr>
-									  <tr>
-										  <td align="center">6</td>
-										  <td>Winch - Fairlead with plinth </td>
-										  <td>1</td>
-										  <td>510</td>
-										  <td>565</td>
-										  <td>819</td>
-										  <td>350</td>
-										  <td>2.5(L)x2.5(W)x4(H)</td>
-										  <td>500</td>
-									  </tr>
-									  <tr>
-										  <td align="center">7</td>
-										  <td>Console </td>
-										  <td>2</td>
-										  <td>510</td>
-										  <td>510</td>
-										  <td>225</td>
-										  <td>40</td>
-										  <td>2.5 (L)x 2.2(W)x1.3(H)</td>
-										  <td>55</td>
-									  </tr>
-								  </tbody>
-							  </table>
-						  </para>
-					  </content>
-				  </section>
+              <para>
+                <table frame="box" rules="all">
+                  <colgroup>
+                    <col/>
+                    <col/>
+                    <col/>
+                    <col/>
+                    <col/>
+                    <col/>
+                    <col/>
+                    <col/>
+                    <col/>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td align="center" rowspan="2">
+                        <h6>Sl. No.</h6>
+                      </td>
+                      <td rowspan="2">
+                        <h6>Unit</h6>
+                      </td>
+                      <td rowspan="2">
+                        <h6>Qty</h6>
+                      </td>
+                      <td colspan="3">
+                        <h6>Dimensions in mm</h6>
+                      </td>
+                      <td rowspan="2">
+                        <h6>Wt. in Kgs Approx.</h6>
+                      </td>
+                      <td rowspan="2">
+                        <h6>Box Size  (Ft.)</h6>
+                      </td>
+                      <td rowspan="2">
+                        <h6>Wt. (Job +Box) Kgs</h6>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h6>Length</h6>
+                      </td>
+                      <td>
+                        <h6>Width</h6>
+                      </td>
+                      <td>
+                        <h6>Height/ Depth</h6>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center">1</td>
+                      <td>Launcher (EDL with Plinth, LCU,   10 no’s FVA’s) </td>
+                      <td>2 (P&amp;S)</td>
+                      <td>1685</td>
+                      <td>1164 (with doors closed)</td>
+                      <td>1660</td>
+                      <td>925</td>
+                      <td>6.5 (L)x4.5(W)x6(H)</td>
+                      <td>1075</td>
+                    </tr>
+                    <tr>
+                      <td align="center">2</td>
+                      <td>Remote Control Unit </td>
+                      <td>1/2EDL’s</td>
+                      <td>430</td>
+                      <td>190</td>
+                      <td>330</td>
+                      <td>20</td>
+                      <td>2.2 (L)x1(W)x1.5(H)</td>
+                      <td>34</td>
+                    </tr>
+                    <tr>
+                      <td align="center">3</td>
+                      <td>Winch - Gear Box Assembly </td>
+                      <td>1</td>
+                      <td>2540</td>
+                      <td>1910</td>
+                      <td>1650</td>
+                      <td>3400</td>
+                      <td>9(L)x7(W)x6.5(H)</td>
+                      <td>3650</td>
+                    </tr>
+                    <tr>
+                      <td align="center">4</td>
+                      <td>Winch - Level Wind Assembly </td>
+                      <td>1</td>
+                      <td>525</td>
+                      <td>1910</td>
+                      <td>1650</td>
+                      <td>500</td>
+                      <td>2.5(L)x7(W)x6.5(H)</td>
+                      <td>700</td>
+                    </tr>
+                    <tr>
+                      <td align="center">5</td>
+                      <td>Winch - Plinth </td>
+                      <td>1</td>
+                      <td>2540</td>
+                      <td>1910</td>
+                      <td>200</td>
+                      <td>1044</td>
+                      <td>9(L)x7(W)x2(H)</td>
+                      <td>1244</td>
+                    </tr>
+                    <tr>
+                      <td align="center">6</td>
+                      <td>Winch - Fairlead with plinth </td>
+                      <td>1</td>
+                      <td>510</td>
+                      <td>565</td>
+                      <td>819</td>
+                      <td>350</td>
+                      <td>2.5(L)x2.5(W)x4(H)</td>
+                      <td>500</td>
+                    </tr>
+                    <tr>
+                      <td align="center">7</td>
+                      <td>Console </td>
+                      <td>2</td>
+                      <td>510</td>
+                      <td>510</td>
+                      <td>225</td>
+                      <td>40</td>
+                      <td>2.5 (L)x 2.2(W)x1.3(H)</td>
+                      <td>55</td>
+                    </tr>
+                    <tr>
+                      <td align="center">8</td>
+                      <td>Cabinet</td>
+                      <td>1</td>
+                      <td>1215</td>
+                      <td>635</td>
+                      <td>620</td>
+                      <td>271</td>
+                      <td>3 x 3 x 5.6</td>
+                      <td>400</td>
+                    </tr>
+                    <tr>
+                      <td align="center">9</td>
+                      <td>Towed Array</td>
+                      <td>1</td>
+                      <td>774500</td>
+                      <td>60.3</td>
+                      <td>60.3</td>
+                      <td>358.6 +/- 63.2</td>
+                      <td>6.5 x 5.2 x 5.2</td>
+                      <td>760</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </para>
+            </content>
+          </section>
 				  <section id="2.1.3 Packing Instructions " level="4">
 					  <title>2.1.3 Packing Instructions </title>
 					  <content>
@@ -5915,7 +6141,7 @@
 								  have adequate thickness and strength. The packaging box sizes should
 								  be appropriately selected in reference to the dimensions mentioned
 								  in the  <a
-			onclick="javascript:parent.treeID(&quot;Page-110_Sy&quot;);" href="#"
+			onclick="javascript:parent.treeID(&quot;Page-100_Sy&quot;);" href="#"
 			id="TopicID">Para 2.1.2</a>. It shall be packed by means of wrapping water proof
 								  thick polythene cover/cushioning material around the unit and taped.
 								  The silica gel bags (desiccant material) shall be placed in the packing
@@ -5930,7 +6156,7 @@
 						  <content>
 							  <para>
 								  See  <a
-			   onclick="javascript:parent.treeID(&quot;Page-110_Sy&quot;);" href="#"
+			   onclick="javascript:parent.treeID(&quot;Page-100_Sy&quot;);" href="#"
 			   id="TopicID">Para 2.1.2</a> for packaging box sizes of the RCU.
 								  RCU being a light weight unit (20kgs), it shall be packed by means
 								  of wrapping a water proof thick polythene cover around the unit. Thermocol
@@ -5947,7 +6173,7 @@
 								  The Winch-Gear Box Assembly being a heavy weight unit
 								  (3400 Kgs), wooden panel or pallet being used should have adequate
 								  thickness and strength. The packaging box sizes should be appropriately
-								  selected in reference to the dimensions mentioned in the  <a href="#" id="TopicID" onclick="javascript:parent.treeID(&quot;Page-110_Sy&quot;);" >Para 2.1.2.</a>
+								  selected in reference to the dimensions mentioned in the  <a href="#" id="TopicID" onclick="javascript:parent.treeID(&quot;Page-100_Sy&quot;);" >Para 2.1.2.</a>
 								  The whole assembly shall be packed by means of wrapping water proof
 								  thick polythene cover/cushioning material around each unit and taped.
 								  The shafts of Gear box assembly shall be packed by means of wrapping
@@ -5971,7 +6197,7 @@
 								  unit (500 Kgs), wooden panel or pallet being used should have adequate
 								  thickness and strength. The packaging box sizes should be appropriately
 								  selected in reference to the dimensions mentioned in the <a
-  onclick="javascript:parent.treeID(&quot;Page-110_Sy&quot;);" href="#"
+  onclick="javascript:parent.treeID(&quot;Page-100_Sy&quot;);" href="#"
   id="TopicID">Para 2.1.2.</a>
 								  The shafts of Level Wind Assembly shall be packed by means of wrapping
 								  a sheet of cardboard or flexible plastic around it. The lead screws
@@ -5992,7 +6218,7 @@
 								  wooden panel or pallet being used should have adequate thickness and
 								  strength. The packaging box sizes should be appropriately selected
 								  in reference to the dimensions mentioned in the <a
-  onclick="javascript:parent.treeID(&quot;Page-110_Sy&quot;);" href="#"
+  onclick="javascript:parent.treeID(&quot;Page-100_Sy&quot;);" href="#"
   id="TopicID">Para 2.1.2.</a> The plinth
 								  shall be packed by means of wrapping water proof thick polythene cover/cushioning
 								  material around it and taped. The plinth shall be mounted on specially
@@ -6014,7 +6240,7 @@
 								  (350 Kgs), wooden panel or pallet being used should have adequate
 								  thickness and strength. The packaging box sizes should be appropriately
 								  selected in reference to the dimensions mentioned in the <a
-  onclick="javascript:parent.treeID(&quot;Page-110_Sy&quot;);" href="#"  id="TopicID">Para 2.1.2.</a>
+  onclick="javascript:parent.treeID(&quot;Page-100_Sy&quot;);" href="#"  id="TopicID">Para 2.1.2.</a>
 								  The Winch Fairlead with plinth shall be packed by means of wrapping
 								  water proof thick polythene cover/cushioning material around it and
 								  taped. It shall be mounted on specially made frames (wooden type)
@@ -6033,7 +6259,7 @@
 							  <para>
 								  The packaging box sizes of the Console should be appropriately
 								  selected in reference to the dimensions mentioned in the <a
-  onclick="javascript:parent.treeID(&quot;Page-110_Sy&quot;);" href="#"
+  onclick="javascript:parent.treeID(&quot;Page-100_Sy&quot;);" href="#"
   id="TopicID">Para 2.1.2.</a>
 								  The Console being a medium weight unit (40 kgs), the unit shall be
 								  wrapped with plastic bag or polythene cover/cushioning material and
@@ -6057,14 +6283,90 @@
 							  </para>
 						  </content>
 					  </section>
-					  <section id="2.1.4.8" level="5">
-
-
-					  </section>
-					  <section id="2.1.4.9" level="5">
-
-
-					  </section>
+            <section id="2.1.4.8  Wooden Crate Packing for Cabinet" level="5">
+              <title>2.1.4.8 – Wooden Crate Packing for Cabinet</title>
+              <content>
+                <para>
+                  The NTDS Cabinet Transported in a bespoke wooden crate
+                  that utilises the cabinet mounting points to support the Cabinet on
+                  transport specific vibration isolation mounts (four per crated cabinet).
+                </para
+>
+                <para>
+                  The all up weight of the crated NTDS Cabinet is approximately
+                  400kg.
+                </para>
+                <para>
+                  This packaged weight requires mechanical assistance
+                  to lift and move and suitably certified mechanical handling equipment
+                  should be employed.
+                </para>
+                <para>
+                  Pallet truck and/or forklift for the
+                  boxed NTDS Cabinet, lifting eyes (supplied/stored inside cabinet door)
+                  and strops for crane assisted lifting an NTDS Cabinet with crate removed.
+                </para
+>
+                <para>These arrangements should be considered as guidance only.</para
+>
+                <para>
+                  All manual handling Arrangements must be undertaken in accordance
+                  with any local legislation or statutory requirements controlling the
+                  maximum lift limitations for individuals or multiple persons working
+                  in concert.
+                </para>
+                <para>
+                  All lifting is to be conducted only by Suitably
+                  Qualified and Experienced Personnel (SQEP) following a local lifting
+                  assessment.  Lifting must be conducted in accordance with local legislation
+                  and in consultation with the respective installation drawings.  Where
+                  required, lifting aids that are appropriate for the planned operation
+                  should be used.
+                </para>
+              </content>
+            </section>
+            <section id="2.1.4.9  Wooden Crate Packing for Towed Array" level="5">
+              <title>2.1.4.9 – Wooden Crate Packing for Towed Array</title>
+              <content>
+                <para>
+                  The NTDS Towed Array is transported on a cable drum
+                  chained to a transportation pallet that has crate sides and top installed.
+                </para
+>
+                <para>
+                  The all up weight of the crated NTDS Towed Array is approximately
+                  760kg.
+                </para>
+                <para>
+                  This packaged weight requires mechanical assistance
+                  to lift and move and suitably certified mechanical handling equipment
+                  should be employed.
+                </para>
+                <para>
+                  Pallet truck and/or forklift for the
+                  boxed NTDS Cabinet, strops for crane assisted lifting an NTDS Array
+                  (on the drum) with crate removed.
+                </para>
+                <para>
+                  These arrangements should
+                  be considered as guidance only.
+                </para>
+                <para>
+                  All manual handling Arrangements
+                  must be undertaken in accordance with any local legislation or statutory
+                  requirements controlling the maximum lift limitations for individuals
+                  or multiple persons working in concert.
+                </para>
+                <para>
+                  All lifting is
+                  to be conducted only by Suitably Qualified and Experienced Personnel
+                  (SQEP) following a local lifting assessment.  Lifting must be conducted
+                  in accordance with local legislation and in consultation with the
+                  respective installation drawings.  Where required, lifting aids that
+                  are appropriate for the planned operation should be used.
+                </para>
+              </content>
+            </section>
 
 
 				  </section>
@@ -6409,40 +6711,46 @@
 						  </para>
 					  </content>
 				  </section>
-				  <section id="2.2.3 Grounding requirements" level="4">
-					  <title>2.2.3 Grounding requirements</title>
-					  <content>
-						  <para>
-							  All subsystems ‘Ground’ is connected to ‘Prime Earth
-							  Point’ available on the ship. The equipment ground connection is capable
-							  of protecting personnel against electrical shocks due to degradation
-							  of electrically powered equipment. It is also able to refer to a fixed
-							  electric potential for all the signals generated in the equipment.
-						  </para
-  >
-						  <para>
-							  The ground connection for all main units shall be established
-							  through the shielding of the connector that is to be fastened to the
-							  structure. The ground terminals to be connected to the EDL, RCU and
-							  Winch are the standard twisted mesh flat cable/copper cable, screwed
-							  onto the unit frame on one side and to the ship structure on the other
-							  side.
-						  </para>
-						  <para>
-							  Ensure that all the ground terminals are well fastened
-							  by means of screw/clamp/lugs with plain and spring washers. Electric
-							  resistance between unit and hull terminal shall not be greater than
-							  0.5 ohm.
-						  </para>
-						  <para>
-							  Measure the resistance between the prime earth
-							  and unit earth points. The resistance must also be measured between
-							  the Prime Earth and the Earthing Point. The impedance between the
-							  Earthing points and the prime earth stud shall be &lt;0.1ohms.
-						  </para
-  >
-					  </content>
-				  </section>
+          <section id="2.2.3 Grounding requirements" level="4">
+            <title>2.2.3 Grounding requirements</title>
+            <content>
+              <para>
+                All subsystems ‘Ground’ is connected
+                to ‘Prime Earth 					  Point’ available on the ship. The equipment
+                ground connection is capable 					  of protecting personnel against
+                electrical shocks due to degradation 					  of electrically powered
+                equipment. It is also able to refer to a fixed 					  electric potential
+                for all the signals generated in the equipment.
+              </para>
+              <para>
+                The ground connection for all main units shall be established
+                through the shielding of the connector that is to be fastened
+                to the 					  structure. The ground terminals to be connected to the
+                EDL, RCU and 					  Winch are the standard twisted mesh flat cable/copper
+                cable, screwed 					  onto the unit frame on one side and to the ship
+                structure on the other 					  side.
+              </para>
+              <para>
+                Ensure that all the ground terminals are well fastened 					  by
+                means of screw/clamp/lugs with plain and spring washers. Electric
+                resistance between unit and hull terminal shall not be greater
+                than 					  0.5 ohm.
+              </para>
+              <para>
+                Measure the
+                resistance between the prime earth 					  and unit earth points. The
+                resistance must also be measured between 					  the Prime Earth and
+                the Earthing Point. The impedance between the 					  Earthing points
+                and the prime earth stud shall be &lt;0.1ohms.
+              </para>
+              <para
+>
+                Each piece of equipment has one earth cable connected between chassis
+                and ships earth.   The winch has each winch part grounded to the winch
+                plinth and the winch plinth is grounded to ships earth.
+              </para>
+            </content>
+          </section>
 				  <section id="2.2.4 Air cooling requirements  " level="4">
 					  <title>2.2.4 Air cooling requirements  </title>
 					  <content>
@@ -6465,76 +6773,83 @@
 							  </h6>
 						  </para>
 						  <para>
-							  <table frame="box" rules="all">
-								  <colgroup>
-									  <col/>
-									  <col/>
-									  <col/>
-									  <col/>
-									  <col/>
-								  </colgroup>
-								  <tbody>
-									  <tr>
-										  <td align="center">
-											  <h6>Sl. No.</h6>
-										  </td>
-										  <td>
-											  <h6>Unit</h6>
-										  </td>
-										  <td>
-											  <h6>Approx. Load (W)</h6>
-										  </td>
-										  <td>
-											  <h6>Heat Dissipated (Kcal/hour)</h6>
-										  </td>
-										  <td>
-											  <h6>Mode of Heat Removal</h6>
-										  </td>
-									  </tr>
-									  <tr>
-										  <td align="center">1</td>
-										  <td>EDL (Firing Valve Assembly)</td>
-										  <td>50W</td>
-										  <td>25W</td>
-										  <td>By conduction</td>
-									  </tr>
-									  <tr>
-										  <td align="center">2</td>
-										  <td>Local Control Unit</td>
-										  <td>50W</td>
-										  <td>25W</td>
-										  <td>By conduction</td>
-									  </tr>
-									  <tr>
-										  <td align="center">3</td>
-										  <td>Remote Control Unit </td>
-										  <td>50W</td>
-										  <td>25W</td>
-										  <td>By conduction</td>
-									  </tr>
-									  <tr>
-										  <td align="center">4</td>
-										  <td>Winch - Drum Motor</td>
-										  <td>22kW</td>
-										  <td>17kW</td>
-										  <td>By conduction</td>
-									  </tr>
-									  <tr>
-										  <td align="center">5</td>
-										  <td>Winch - Level Wind Motor</td>
-										  <td>0.75kW</td>
-										  <td>0.6kW</td>
-										  <td>By convection</td>
-									  </tr>
-									  <tr>
-										  <td align="center">6</td>
-										  <td>Console</td>
-										  <td>90W</td>
-										  <td>75W</td>
-										  <td>By blowers</td>
-									  </tr>
-								  </tbody>
-							  </table>
+                <table frame="box" rules="all">
+                  <colgroup>
+                    <col/>
+                    <col/>
+                    <col/>
+                    <col/>
+                    <col/>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td align="center">
+                        <h6>Sl. No.</h6>
+                      </td>
+                      <td>
+                        <h6>Unit</h6>
+                      </td>
+                      <td>
+                        <h6>Approx. Load (W)</h6>
+                      </td>
+                      <td>
+                        <h6>Heat Dissipated (Kcal/hour)</h6>
+                      </td>
+                      <td>
+                        <h6>Mode of Heat Removal</h6>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center">1</td>
+                      <td>EDL (Firing Valve Assembly)</td>
+                      <td>50W</td>
+                      <td>25W</td>
+                      <td>By conduction</td>
+                    </tr>
+                    <tr>
+                      <td align="center">2</td>
+                      <td>Local Control Unit</td>
+                      <td>50W</td>
+                      <td>25W</td>
+                      <td>By conduction</td>
+                    </tr>
+                    <tr>
+                      <td align="center">3</td>
+                      <td>Remote Control Unit </td>
+                      <td>50W</td>
+                      <td>25W</td>
+                      <td>By conduction</td>
+                    </tr>
+                    <tr>
+                      <td align="center">4</td>
+                      <td>Winch - Drum Motor</td>
+                      <td>22kW</td>
+                      <td>17kW</td>
+                      <td>By conduction</td>
+                    </tr>
+                    <tr>
+                      <td align="center">5</td>
+                      <td>Winch - Level Wind Motor</td>
+                      <td>0.75kW</td>
+                      <td>0.6kW</td>
+                      <td>By convection</td>
+                    </tr>
+                    <tr>
+                      <td align="center">6</td>
+                      <td>Console</td>
+                      <td>90W</td>
+                      <td>75W</td>
+                      <td>By blowers</td>
+                    </tr>
+                    <tr>
+                      <td align="center">7</td>
+                      <td>Cabinet</td>
+                      <td>TBD</td>
+                      <td>TBD</td>
+                      <td>Fan</td>
+                    </tr>
+                  </tbody>
+                </table>
 						  </para>
 					  </content>
 				  </section>
@@ -6592,51 +6907,67 @@
 						  </para>
 					  </content>
 				  </section>
-				  <section id="2.2.11 Environmental Specifications" level="4">
-					  <title>2.2.11 Environmental Specifications</title>
-					  <content>
-						  <para>
-							  The NTDS complies with environmental specifications
-							  for ship-borne applications, as specified in JSS 55555:2012 (Rev.
-							  03)
-						  </para>
-						  <para>
-							  <ul type="DISC">
-								  <li>
-									  For Environmental Specifications of Launcher,<h6>
-										  <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Launcher_ES.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
-											  Click here.<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
-										  </a>
-									  </h6
+          <section id="2.2.11 Environmental Specifications" level="4">
+            <title>2.2.11 Environmental Specifications</title>
+            <content>
+              <para>
+                The NTDS complies with environmental specifications
+                for ship-borne applications, as specified in JSS 55555:2012 (Rev.
+                03)
+              </para>
+              <para>
+                <ul type="DISC">
+                  <li>
+                    For Environmental Specifications of Launcher,<h6>
+                      <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Launcher_ES.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                        Click here.<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+                      </a>
+                    </h6
   >
-								  </li>
-								  <li>
-									  For Environmental Specifications of RCU, <h6>
-										  <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/RCU_ES.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
-											  Click here.<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
-										  </a>
-									  </h6>
-								  </li>
-								  <li>
-									  For Environmental Specifications of Winch, <h6>
-										  <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Winch_ES.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
-											  Click here.<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
-										  </a>
-									  </h6
+                  </li>
+                  <li>
+                    For Environmental Specifications of RCU, <h6>
+                      <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/RCU_ES.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                        Click here.<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+                      </a>
+                    </h6>
+                  </li>
+                  <li>
+                    For Environmental Specifications of Winch, <h6>
+                      <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Winch_ES.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                        Click here.<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+                      </a>
+                    </h6
   >
-								  </li>
-								  <li>
-									  For Environmental Specifications of Console, <h6>
-										  <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Console_ES.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
-											  Click here.<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
-										  </a>
-									  </h6
+                  </li>
+                  <li>
+                    For Environmental Specifications of Console, <h6>
+                      <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Console_ES.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                        Click here.<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+                      </a>
+                    </h6
   >
-								  </li>
-							  </ul>
-						  </para>
-					  </content>
-				  </section>
+                  </li>
+                  <li>
+                    For Environmental Specifications of Cabinet, <h6>
+                      <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Cabinet_Environmental.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                        Click here.<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+                      </a>
+                    </h6
+  >
+                  </li>
+                  <li>
+                    For Environmental Specifications of The Towed Array, <h6>
+                      <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Towed_Environmental.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                        Click here.<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+                      </a>
+                    </h6
+  >
+                  </li>
+                </ul>
+              </para>
+            </content>
+          </section>
 				  <section id="2.2.12 Installation Requirements " level="4">
 					  <title>2.2.12 Installation Requirements </title>
 					  <content>
@@ -8859,61 +9190,66 @@
 							  required are listed in the table below:
 						  </para>
 						  <para>
-							  <table frame="box" rules="all">
-								  <colgroup align="left">
-									  <col width="144"/>
-									  <col width="195"/>
-									  <col width="203"/>
-								  </colgroup>
-								  <tbody>
-									  <tr>
-										  <td align ="center" valign="top">
-											  <h4>Sl. No.</h4>
-										  </td>
-										  <td valign="top">
-											  <h4>Description</h4>
-										  </td>
-										  <td valign="top">
-											  <h4>Identification</h4>
-										  </td>
-									  </tr>
-									  <tr>
-										  <td align="center" valign="top">1</td>
-										  <td valign="top">Flat Screwdrivers</td>
-										  <td valign="top">Standard M6 to M10 Set</td>
-									  </tr>
-									  <tr>
-										  <td align="center" valign="top">2</td>
-										  <td valign="top">Wrench Set</td>
-										  <td valign="top">Standard 6 to 32mm</td>
-									  </tr>
-									  <tr>
-										  <td align="center" valign="top">3</td>
-										  <td valign="top">Allen wrench set</td>
-										  <td valign="top">Standard 1.5 to 10mm</td>
-									  </tr>
-									  <tr>
-										  <td align="center" valign="top">4</td>
-										  <td valign="top">Multimeter</td>
-										  <td valign="top">General</td>
-									  </tr>
-									  <tr>
-										  <td align="center" valign="top">5</td>
-										  <td valign="top">Megger</td>
-										  <td valign="top">General</td>
-									  </tr>
-									  <tr>
-										  <td align="center" valign="top">5</td>
-										  <td valign="top">C Spanner (Size1)</td>
-										  <td valign="top">Hook type</td>
-									  </tr>
-									  <tr>
-										  <td align="center" valign="top">6</td>
-										  <td valign="top">C Spanner (Size2)</td>
-										  <td valign="top">Hook type</td>
-									  </tr>
-								  </tbody>
-							  </table>
+                <table frame="box" rules="all">
+                  <colgroup align="left">
+                    <col width="144"/>
+                    <col width="195"/>
+                    <col width="203"/>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td align ="center" valign="top">
+                        <h4>Sl. No.</h4>
+                      </td>
+                      <td valign="top">
+                        <h4>Description</h4>
+                      </td>
+                      <td valign="top">
+                        <h4>Identification</h4>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top">1</td>
+                      <td valign="top">Flat Screwdrivers</td>
+                      <td valign="top">Standard M6 to M10 Set</td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top">2</td>
+                      <td valign="top">Wrench Set</td>
+                      <td valign="top">Standard 6 to 32mm</td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top">3</td>
+                      <td valign="top">Allen wrench set</td>
+                      <td valign="top">Standard 1.5 to 10mm</td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top">4</td>
+                      <td valign="top">Multimeter</td>
+                      <td valign="top">General</td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top">5</td>
+                      <td valign="top">Megger</td>
+                      <td valign="top">General</td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top">5</td>
+                      <td valign="top">C Spanner (Size1)</td>
+                      <td valign="top">Hook type</td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top">6</td>
+                      <td valign="top">C Spanner (Size2)</td>
+                      <td valign="top">Hook type</td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top">7</td>
+                      <td valign="top">Vacuum Cleaner</td>
+                      <td valign="top">General</td>
+                    </tr>
+                  </tbody>
+                </table>
 						  </para>
 					  </content>
 				  </section>
@@ -9077,457 +9413,657 @@
 							  </para>
 						  </content>
 					  </section>
-					  <section id="2.4.3.2 Weekly maintenance " level="5">
-						  <title id="2.4.3.2 Weekly maintenance ">2.4.3.2	Weekly maintenance</title>
-						  <content>
-							  <para>(Periodicity code -W)</para>
-							  <para>
-								  <h4>
-									  Tightness of
-									  Fasteners
-								  </h4>
-								  <?Pub Caret 0?>
-							  </para>
-							  <para>
-								  Perform the following procedure
-								  to check Fasteners securing the unit:
-							  </para>
-							  <para>(a)	Ensure that power supply to the system is Switched OFF. </para>
-							  <para>
-								  (b)	Locate the positions where the units like EDL, Winch, RCU
-								  &amp; Console are secured to the ship’s deck/bulkhead.
-							  </para>
-							  <para>
-								  (c)	Using the appropriate tool, tighten the fastening mechanisms
-								  and make sure that the units are well secured to the designated torque
-								  value where appropriate.See the table below.
-							  </para>
-							  <para>
-								  <figure>
-									  <graphic fileref="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/sec_2_4_3_2_table.gif"></graphic>
-
-								  </figure>
-							  </para>
-							  <para>
-								  (d)	Ensure that the tools used
-								  are in good condition. Defective tools can cause damage to the equipment.
-							  </para>
-							  <para>
-								  <note>
-									  <para style="color:red">
-										  Note:	Do not apply excess force during tightening/loosening.
-									  </para>
-								  </note>
-							  </para>
-							  <para>
-								  <h4>Earthing checks</h4>
-							  </para>
-							  <para>
-								  Perform the
-								  following:
-							  </para>
-							  <para>(a) Ensure the power supply to the system is switched OFF.</para>
-							  <para>(b) Disconnect the earthing strip from the unit.</para>
-							  <para>
-								  (c) Clean the earthing strip using emery paper and soft cloth.
-							  </para>
-							  <para>
-								  (d) Check
-								  the earthing and ensure that value lies in 0-2 ohms.
-							  </para>
-							  <para>(e) Connect the earthing strip back to the unit.</para>
-
-
-							  <para>
-								  <h4>Cables and connections checks-Winch</h4>
-							  </para  >
-							  <para>Perform the following:</para>
-
-							  <para>(a) Check fibre optic cables for damage.</para>
-							  <para>
-								  (b) Check terminal strips inside slip ring junction box for any loose
-								  contacts or poor connection.
-							  </para>
-							  <para>
-								  (c) Check operation of all limit switches by means of rotating winch
-								  drum manually. These switches can be activated by hand and their operation
-								  checked from the MCP.
-							  </para>
-
-
-
-							  <para>
-								  <h4>Gear box oil level checks</h4>
-							  </para>
-							  <para>
-								  For Gear box oil level checks,
-								  <a onclick="javascript:parent.VideoFrame(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Video/videos/V26_GearBoxOilLevelChecks.mp4&quot;);parent.masterframe.rows=&quot;70%,30%&quot;" actuate="uSer">
-									  Click here <img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/video.gif" style="height:40px;width:50px;" />
-								  </a>
-							  </para>
-							  <para>
-								  Perform
-								  the following:
-							  </para>
-							  <para>(a) Visually see the oil level indicator.</para>
-							  <para>
-								  (b) Check if oil levels in gearbox is adequate else top up to the
-								  desired level.
-							  </para>
-							  <para>(c) Ensure that the oil used is correct. Do not mix oils.</para>
-
-
-							  <para>
-								  <note>
-									  <para style="color:red">
-										  Note: Oil specification: MAK 320
-									  </para>
-								  </note>
-							  </para>
-							  <para>
-								  <h4>Lubrication</h4>
-							  </para>
-							  <para>
-								  For Winch Lubrication,
-								  <a onclick="javascript:parent.VideoFrame(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Video/videos/V18_Winch_Lubrication.mp4&quot;);parent.masterframe.rows=&quot;70%,30%&quot;" actuate="uSer">
-									  Click here <img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/video.gif" style="height:40px;width:50px;" />
-								  </a>
-							  </para>
-							  <para>
-								  <para>
-									  Perform
-									  the following:
-								  </para>
-							  </para>
-							  <para>
-								  <note>
-									  <para style="color:red">
-										  Note: Grease specification - NLGI3 (HP)
-									  </para>
-								  </note>
-							  </para>
-
-
-							  <para>(a) Clean and grease nuts &amp; bolts that have been fastened to plinth.</para>
-							  <para>(b) Clean and apply a thin layer of grease over level wind lead screw.</para>
-							  <para>(c) Clean and apply a thin layer of grease over support shaft.</para>
-							  <para>
-								  (d) Clean and apply a thin layer of grease over lead screw of band
-								  brake.
-							  </para>
-							  <para>(e) Clean and grease the locking pin of band brakes.</para>
-
-
-
-							  <para>
-								  <h4>Greasing to Encoder Assembly-Winch</h4>
-							  </para>
-							  <para
-  >
-								  Perform the following:
-							  </para>
-							  <para>
-								  (a) Using grease gun (12mm) lubricate the Encoder assembly at the nipples
-								  provided on the housing.
-							  </para>
-
-
-
-							  <para>
-								  <note>
-									  <para style="color:red">
-										  Note: Avoid excess greasing. Grease specification: Gulf Crown MP Grease (NLGI3).
-
-									  </para>
-								  </note>
-							  </para>
-
-						  </content>
-					  </section>
-					  <section id="2.4.3.3 Quarterly Maintenance Routines" level="5">
-						  <title id="2.4.3.3 Quarterly Maintenance Routines">
-							  2.4.3.3 Quarterly
-							  Maintenance Routines
-						  </title>
-						  <content>
-							  <para>(Periodicity code -Q)</para>
-							  <para>
-								  Power/Signal/FOTC
-								  cable connector checks
-							  </para>
-							  <para>
-								  Perform the following:<ol type="a">
-									  <li>Ensure that the power supply to the system is switched OFF.</li>
-									  <li>
-										  Check all power and signal/data/FOTC cables terminating from their
-										  respective units / cabinets are properly connected.
-									  </li>
-									  <li>
-										  Check for any physical damage on the cables and connectors, take
-										  corrective action.
-									  </li>
-								  </ol>
-							  </para>
-							  <para>
-								  <h4>Inspection of fan for operation-Console/Winch-MCP </h4
-  >
-							  </para>
-							  <para>
-								  The console is fitted with one fan and MCP is equipped
-								  with 4 fans. For inspection of fan for operation, perform the following:	<ol
-  type="a">
-									  <li>Switch ON the system/unit.</li>
-									  <li>Check that the air flow is adequate to cooling the unit.</li>
-									  <li>
-										  Check for excessive noise or friction during startup or during
-										  operation.
-									  </li>
-									  <li>
-										  Switch OFF the system and listen to the bearing noise of the fan
-										  when the RPM (revolutions per minute) comes down. A rumbling or grinding
-										  noise indicates a worn out or fouled bearings. Contact the OEM for replacement.
-									  </li>
-								  </ol>
-							  </para>
-						  </content>
-					  </section>
-					  <section id="2.4.3.4 Half Yearly Maintenance Routines" level="5">
-						  <title id="2.4.3.4 Half Yearly Maintenance Routines">
-							  2.4.3.4	Half-Yearly
-							  Maintenance Routines
-						  </title>
-						  <content>
-							  <para>(Periodicity code -S)</para>
-							  <para>
-								  <h4>
-									  Cleaning of plugs
-									  and connectors
-								  </h4>
-							  </para>
-							  <para>Perform the following:</para>
-							  <para
-  >Ensure that the power supply to the system is switched OFF.</para
-  >
-							  <para>
-								  Disconnect all connectors. Clean the plugs and sockets thoroughly
-								  using alcohol. Visually inspect the internal pins of the connector
-								  and plug for dirt, corrosion and any loose connection.
-							  </para>
-							  <para
-  >Put back all connectors to their respective plugs.</para>
-							  <para>
-								  <h4
-  >Internal Inspection (EDL)</h4>
-							  </para>
-							  <para>
-								  For Maintenance EDL,
-								  <a onclick="javascript:parent.VideoFrame(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Video/videos/V17_Maintenance_EDL.mp4&quot;);parent.masterframe.rows=&quot;70%,30%&quot;" actuate="uSer">
-									  Click here <img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/video.gif" style="height:40px;width:50px;" />
-								  </a>
-							  </para>
-							  <para>Carry out the following:</para
-  >
-							  <para>
-								  <note>
-									  <para style="color:red">
-
-										  Note:	Extreme care is to be taken while performing internal
-										  inspection of EDL.
-
-									  </para>
-								  </note>
-							  </para>
-							  <para>
-								  <ol type="a">
-									  <li>Ensure that the power supply to the system is switched OFF.</li>
-									  <li>Remove the cover from EDL.</li>
-									  <li>
-										  Visually inspect inside of the EDL for dirt, corrosion, loose
-										  particles and blockage of draining holes located at bottom structure
-										  of the EDL. Clean and preserve if required.
-									  </li>
-									  <li>
-										  Check for air leaks and tightness of pneumatic fittings between
-										  reservoir &amp; pressure gauge and EDL &amp; FVA.
-									  </li>
-									  <li>
-										  Check all electrical cables end terminations for defective wiring
-										  and poor/loose connection and mechanical damage or corrosion. Take
-										  corrective action.
-									  </li>
-									  <li>Check all the fastener screws/bolts.</li>
-									  <li>Check state of gaskets and replace if perished.</li>
-									  <li>
-										  Check outside of the barrels for damage or signs of corrosion
-										  and take corrective measures if necessary.
-									  </li>
-								  </ol>
-							  </para>
-							  <para>
-								  <h4>Internal Inspection (LCU/RCU)</h4>
-							  </para>
-							  <para
-  >
-								  Perform the following:<ol type="a">
-									  <li>Ensure that the power supply to the system is switched OFF.</li>
-									  <li>Loosen all screws on the front/top panel of LCU and open it.</li>
-									  <li>
-										  Visually inspect inside of the LCU for dirt, corrosion, loose
-										  particles and overheated components. Clean and preserve if required.
-									  </li>
-									  <li>
-										  Check all electrical/data/signal cables end terminations for defective
-										  wiring and poor/loose connection and mechanical damage or corrosion.
-										  Take corrective action.
-									  </li>
-									  <li>Check all the fastener screws/bolts.</li>
-									  <li>
-										  Check outside of the cabinet for damage or signs of corrosion
-										  and chipped of paint, take corrective measures if necessary.
-									  </li>
-									  <li>Clean the exterior of the cabinet with a damp cloth and wipe dry.</li>
-								  </ol>
-							  </para>
-							  <para>
-								  <h4>Oil replacement in Gear box </h4>
-							  </para>
-							  <para>
-								  For Oil replacement in Gear box,
-								  <a onclick="javascript:parent.VideoFrame(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Video/videos/V27_Gboilreplacement.mp4&quot;);parent.masterframe.rows=&quot;70%,30%&quot;" actuate="uSer">
-									  Click here <img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/video.gif" style="height:40px;width:50px;" />
-								  </a>
-							  </para>
-							  <para
-  >
-								  Perform the following:<ol type="a">
-									  <li>Remove the oil by means of removing the drain plug.</li>
-									  <li>Put back the drain plug.</li>
-									  <li>
-										  Sieving oil through inlet of gear box and check the oil level
-										  in its indicator.
-									  </li>
-								  </ol>
-							  </para>
-							  <para>
-								  <note>
-									  <para style="color:red">
-										  Note: Oil Specification: MAK AMOCAM 320
-									  </para>
-								  </note>
-							  </para>
-
-						  </content>
-					  </section>
-					  <section id="2.4.3.5 Yearly Maintenance Routines" level="5">
-						  <title id="2.4.3.5 Yearly Maintenance Routines">
-							  2.4.3.5 Yearly Maintenance
-							  Routines
-						  </title>
-						  <content>
-							  <para>(Periodicity code -A)</para>
-							  <para>
-								  <h4>Internal Inspection-Console </h4
-  >
-							  </para>
-							  <para>
-								  Perform the following:<ol type="a">
-									  <li>Remove the top cover by unscrewing captive screws on the top plate.</li>
-									  <li>
-										  Remove dust, dirt by using a vacuum cleaner and then clean the
-										  PCBs with anti static ESD cleaning brush.
-									  </li>
-									  <li>
-										  Check all sub-assemblies, PCBs and other components for any damage
-										  and verify that these are secured in their respective slots/positions
-										  firmly.
-									  </li>
-									  <li>
-										  Check all electrical/data cables end terminations for defective
-										  wiring and poor/loose connection and mechanical damage or corrosion.
-										  Take corrective action.
-									  </li>
-									  <li>
-										  Wipe the LCD panel swiftly with cotton or other soft cloth. Do
-										  not apply CCl4 (Carbon Tetrachloride) to the LCD Display or components
-										  as it may damage polarizer.
-									  </li>
-									  <li>
-										  Check the condition of the MOV (Metal Oxide Varistor) mounted
-										  on the RFI Line Filter on 230 VAC power lines and check if they are
-										  deteriorated and replace if required.
-									  </li>
-									  <li>Close and tighten the screws of the top plate.</li>
-								  </ol>
-							  </para>
-							  <para>
-								  <h4>Internal Inspection (Winch- MCP)   </h4>
-							  </para
-  >
-							  <para>
-								  Perform the following:<ol type="a">
-									  <li>Ensure that the power supply to the system is switched OFF.</li>
-									  <li>Loosen all screws on the front/top panel of MCP and open it.</li>
-									  <li>
-										  Visually inspect inside of the MCP for dirt, corrosion, loose
-										  particles and overheated components. Clean and preserve if required.
-									  </li>
-									  <li>
-										  Check all electrical/data cables end terminations for defective
-										  wiring and poor/loose connection and mechanical damage or corrosion.
-										  Take corrective action.
-									  </li>
-									  <li>Check all the fastener screws/bolts.</li>
-									  <li>
-										  Check outside of the cabinet for damage or signs of corrosion
-										  and chipped of paint, take corrective measures if necessary.
-									  </li>
-									  <li>Clean the exterior of the cabinet with a damp cloth and wipe dry.</li>
-								  </ol>
-							  </para>
-							  <para>
-								  <h4>Continuity checks	</h4>
-							  </para>
-							  <para>
-								  Perform
-								  the following:<ol type="a">
-									  <li>Ensure that the power supply to the system is switched OFF.</li>
-									  <li>Disengage all connectors.</li>
-									  <li>
-										  Check the continuity of all cables and ensure that it lies in
-										  approximately  0 - 0.02 ohms.
-									  </li>
-								  </ol>
-							  </para>
-							  <para>
-								  <h4>Gasket checks (EDL/LCU-Door)   </h4>
-							  </para>
-							  <para
-  >
-								  Perform the following:<ol type="a">
-									  <li>Ensure that the power supply to the system is switched OFF.</li>
-									  <li>
-										  Open the EDL/LCU door and check the state of the gaskets and replace
-										  them if necessary.
-									  </li>
-									  <li>Close the both the door and lock it properly.</li>
-								  </ol>
-							  </para>
-							  <para>
-								  <h4>Gasket checks (Winch-MCP Door) </h4>
-							  </para>
-							  <para
-  >
-								  Perform the following:<ol type="a">
-									  <li>Ensure that the power supply to the system is switched OFF.</li>
-									  <li>
-										  Open the MCP door and check the state of the gaskets and replace
-										  them if necessary.
-									  </li>
-									  <li>Close the both the door and lock it properly.</li>
-								  </ol>
-							  </para>
-						  </content>
-					  </section>
+            <section id="2.4.3.2 Weekly maintenance " level="5">
+              <title id="2.4.3.2 Weekly maintenance ">2.4.3.2	Weekly maintenance</title>
+              <content>
+                <para>(Periodicity code -W)</para>
+                <para>
+                  <h4> Tightness of Fasteners</h4>
+                </para>
+                <para>
+                  Perform the
+                  following procedure to check Fasteners securing the unit:
+                </para>
+                <para>(a)	Ensure that power supply to the system is Switched OFF. </para
+>
+                <para>
+                  (b)	Locate the positions where the units like
+                  EDL, Winch, RCU ,<h6>Console &amp; Cabinet</h6> are secured to
+                  the ship’s deck/bulkhead.
+                </para>
+                <para>
+                  (c)	Using
+                  the appropriate tool, tighten the fastening mechanisms 						  and
+                  make sure that the units are well secured to the designated torque
+                  value where appropriate.See the table below.
+                </para
+>
+                <para>
+                  <figure>
+                    <graphic
+                    fileref="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/sec_2_4_3_2_table.gif"
+></graphic>
+                  </figure>
+                </para>
+                <para>
+                  (d)	Ensure that the
+                  tools used 						  are in good condition. Defective tools can cause
+                  damage to the equipment.
+                </para>
+                <para>
+                  <note>
+                    <para style="color:red">
+                      Note:	Do not apply excess force
+                      during tightening/loosening.
+                    </para>
+                  </note>
+                </para>
+                <para>
+                  <h4>Earthing checks</h4
+>
+                </para>
+                <para>
+                  Perform the 						  following:
+                </para>
+                <para>
+                  (a) Ensure the power supply to the system
+                  is switched OFF.
+                </para>
+                <para>
+                  (b) Disconnect the earthing strip
+                  from the unit.
+                </para>
+                <para>
+                  (c) Clean the earthing
+                  strip using emery paper and soft cloth.
+                </para>
+                <para
+>
+                  (d) Check 						  the earthing and ensure that value lies
+                  in 0-2 ohms.
+                </para>
+                <para>
+                  (e) Connect the earthing
+                  strip back to the unit.
+                </para>
+                <para>
+                  <h4>
+                    Cables
+                    and connections checks-Winch
+                  </h4>
+                </para>
+                <para>
+                  Perform
+                  the following:
+                </para>
+                <para>
+                  (a) Check fibre optic cables for
+                  damage.
+                </para>
+                <para>
+                  (b) Check terminal strips inside
+                  slip ring junction box for any loose 						  contacts or poor connection.
+                </para>
+                <para>
+                  (c) Check operation of all limit
+                  switches by means of rotating winch 						  drum manually. These switches
+                  can be activated by hand and their operation 						  checked from
+                  the MCP.
+                </para>
+                <para>
+                  <h4>
+                    Gear box oil
+                    level checks
+                  </h4>
+                </para>
+                <para>
+                  For Gear box
+                  oil level checks, 						  <a
+onclick="javascript:parent.VideoFrame(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Video/videos/V26_GearBoxOilLevelChecks.mp4&quot;);parent.masterframe.rows=&quot;70%,30%&quot;"
+actuate="uSer">
+                    Click here <img
+src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/video.gif"
+style="height:40px;width:50px;"/>
+                  </a>
+                </para>
+                <para> 						  Perform 						  the following: 					  </para>
+                <para>(a) Visually see the oil level indicator.</para>
+                <para
+>
+                  (b) Check if oil levels in gearbox is adequate else top
+                  up to the 						  desired level.
+                </para>
+                <para>
+                  (c) Ensure
+                  that the oil used is correct. Do not mix oils.
+                </para>
+                <para
+>
+                  <note>
+                    <para style="color:red">
+                      Note: Oil specification: MAK 320
+                    </para>
+                  </note>
+                </para>
+                <para>
+                  <h4>Lubrication</h4>
+                </para>
+                <para>
+                  For Winch Lubrication, 						  <a
+onclick="javascript:parent.VideoFrame(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Video/videos/V18_Winch_Lubrication.mp4&quot;);parent.masterframe.rows=&quot;70%,30%&quot;"
+actuate="uSer">
+                    Click here <img
+src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/video.gif"
+style="height:40px;width:50px;"/>
+                  </a>
+                </para>
+                <para>
+                  <para>
+                    Perform 							  the following:
+                  </para>
+                </para>
+                <para>
+                  <note>
+                    <para style="color:red">
+                      Note: Grease specification - NLGI3
+                      (HP)
+                    </para>
+                  </note>
+                </para>
+                <para>
+                  (a) Clean and grease nuts &amp;
+                  bolts that have been fastened to plinth.
+                </para>
+                <para>
+                  (b) Clean
+                  and apply a thin layer of grease over level wind lead screw.
+                </para
+>
+                <para>
+                  (c) Clean and apply a thin layer of grease over support
+                  shaft.
+                </para>
+                <para>
+                  (d) Clean and apply a thin layer
+                  of grease over lead screw of band 						  brake.
+                </para>
+                <para>(e) Clean and grease the locking pin of band brakes.</para
+>
+                <para>
+                  <h4>Greasing to Encoder Assembly-Winch</h4
+>
+                </para>
+                <para>
+                  Perform the following:
+                </para>
+                <para>
+                  (a) Using grease gun (12mm) lubricate
+                  the Encoder assembly at the nipples 						  provided on the housing.
+                </para>
+                <para>
+                  <note>
+                    <para style="color:red">
+                      Note: Avoid excess greasing. Grease
+                      specification: Gulf Crown MP Grease (NLGI3).
+                    </para>
+                  </note>
+                </para>
+                <para>
+                  <h4>Cabinet Check – Earth Continuity</h4
+>
+                </para>
+                <para>Perform the following:</para>
+                <para>
+                  (a)	Using an Electrical
+                  Tester Megger measure the resistance between the earth stud and the
+                  ships hull (ships earth).
+                </para>
+                <para>
+                  (b)	The resistance should measure
+                  less than 0.1 Ohms.
+                </para>
+                <para>
+                  (c)	If the reading is found to be
+                  greater than 0.1 Ohms, investigate cause and take appropriate defect
+                  reporting and remedial action procedure.
+                </para>
+                <para>
+                  (d)	Following
+                  the instructions in the methods section above complete an Earth Continuity
+                  Check on the Cabinet chassis on studs.
+                </para>
+              </content>
+            </section>
+            <section id="2.4.3.3 Quarterly Maintenance Routines" level="5">
+              <title id="2.4.3.3 Quarterly Maintenance Routines">
+                2.4.3.3
+                Quarterly 					  Maintenance Routines
+              </title>
+              <content>
+                <para>(Periodicity code -Q)</para>
+                <para>
+                  Power/Signal/FOTC 						  cable connector checks
+                </para>
+                <para>
+                  Perform the following:<ol type="a">
+                    <li>Ensure that the power supply to the system is switched OFF.</li>
+                    <li>
+                      Check all power and signal/data/FOTC cables terminating
+                      from their 								  respective units / cabinets are properly connected.
+                    </li>
+                    <li>
+                      Check for any physical damage on the cables and connectors,
+                      take 								  corrective action.
+                    </li>
+                  </ol>
+                </para>
+                <para>
+                  <h4>
+                    Inspection of fan for
+                    operation-Console/Winch-MCP
+                  </h4>
+                </para>
+                <para>
+                  The console is fitted with one fan and MCP is equipped 						  with
+                  4 fans. For inspection of fan for operation, perform the following:	<ol
+type="a">
+                    <li>Switch ON the system/unit.</li>
+                    <li>Check that the air flow is adequate to cooling the unit.</li>
+                    <li>
+                      Check for excessive noise or friction during startup
+                      or during 								  operation.
+                    </li>
+                    <li>
+                      Switch OFF the system and listen to the bearing noise
+                      of the fan 								  when the RPM (revolutions per minute) comes down.
+                      A rumbling or grinding 								  noise indicates a worn out or fouled
+                      bearings. Contact the OEM for replacement.
+                    </li>
+                  </ol>
+                </para>
+                <para>
+                  <h6>
+                    Fibre Optic Tow Cable (FOTC) Inspect
+                    (Q although usually done during a tow stream and recovery)
+                  </h6>
+                </para
+>
+                <para>Perform the following:</para>
+                <para>
+                  <ol type="a">
+                    <li>During FOTC recovery or deployment inspect FOTC for damage.</li>
+                    <li>
+                      If damage is found, halt the spool for closer inspection.<para
+>
+                        <ol type="a">
+                          <li>
+                            For a rip or tear that breaches the FOTC sheath and underlying
+                            insulation:<para>
+                              <ol type="i">
+                                <li>The FOTC will need to be replaced at the next opportunity.</li>
+                                <li>Resume recovery and inspection of the FOTC.</li>
+                                <li>
+                                  Carry out the appropriate defect reporting procedure when entire
+                                  Tow has been recovered.
+                                </li>
+                              </ol>
+                            </para>
+                          </li>
+                          <li>
+                            For a rip or tear that does not breach the FOTC underlying insulation:<para
+>
+                              <ol type="i">
+                                <li>Conduct a repair of the FOTC.</li>
+                                <li>Resume recovery and inspection of the FOTC.</li>
+                                <li>
+                                  Carry out the appropriate defect reporting procedure when entire
+                                  Tow has been recovered.
+                                </li>
+                              </ol>
+                            </para>
+                          </li>
+                          <li>
+                            If the Tow or part of the Tow is severed, replace the Tow Components
+                            as necessary.
+                          </li>
+                        </ol>
+                      </para>
+                    </li>
+                  </ol>
+                </para>
+                <para>
+                  <h6>
+                    Towed Array Inspect (Q although usually done
+                    during a tow stream and recovery)
+                  </h6>
+                </para>
+                <para>Perform the following:</para
+>
+                <para>
+                  <ol type="a">
+                    <li>
+                      During Tow deployment and recovery, visually inspect the components
+                      for damage to insulation (not breached) and damage to insulation (breached).
+                    </li>
+                    <li>
+                      For a rip or tear in the sheath, without breach, refer to Repair
+                      of Tow Assembly Procedure.
+                    </li>
+                    <li>
+                      For a rip or tear in the sheath, with breach, replace the Towed
+                      Array.
+                    </li>
+                    <li>
+                      If the Tow or part of the Tow is severed, replace the Tow Components
+                      as necessary.
+                    </li>
+                    <li>Carry out the appropriate defect reporting procedure.</li>
+                  </ol>
+                </para>
+              </content>
+            </section>
+            <section id="2.4.3.4 Half Yearly Maintenance Routines" level="5">
+              <title id="2.4.3.4 Half Yearly Maintenance Routines">
+                2.4.3.4	Half-Yearly
+                Maintenance Routines
+              </title>
+              <content>
+                <para>(Periodicity code -S)</para>
+                <para>
+                  <h4> 							  Cleaning of plugs 							  and connectors 						  </h4
+>
+                </para>
+                <para>Perform the following:</para>
+                <para>Ensure that the power supply to the system is switched OFF.</para
+>
+                <para>
+                  Disconnect all connectors. Clean the plugs
+                  and sockets thoroughly 						  using alcohol. Visually inspect the
+                  internal pins of the connector 						  and plug for dirt, corrosion
+                  and any loose connection.
+                </para>
+                <para>
+                  Put back all
+                  connectors to their respective plugs.
+                </para>
+                <para>
+                  <h4>Internal Inspection (EDL)</h4>
+                </para>
+                <para>
+                  For Maintenance EDL, 						  <a
+onclick="javascript:parent.VideoFrame(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Video/videos/V17_Maintenance_EDL.mp4&quot;);parent.masterframe.rows=&quot;70%,30%&quot;"
+actuate="uSer">
+                    Click here <img
+src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/video.gif"
+style="height:40px;width:50px;"/>
+                  </a>
+                </para>
+                <para>Carry out the following:</para>
+                <para>
+                  <note>
+                    <para style="color:red">
+                      Note:	Extreme care is to be taken
+                      while performing internal 								  inspection of EDL.
+                    </para>
+                  </note>
+                </para>
+                <para>
+                  <ol type="a">
+                    <li>Ensure that the power supply to the system is switched OFF.</li>
+                    <li>Remove the cover from EDL.</li>
+                    <li>
+                      Visually inspect inside of the EDL for dirt, corrosion,
+                      loose 								  particles and blockage of draining holes located at
+                      bottom structure 								  of the EDL. Clean and preserve if required.
+                    </li>
+                    <li>
+                      Check for air leaks and tightness of pneumatic fittings
+                      between 								  reservoir &amp; pressure gauge and EDL &amp; FVA.
+                    </li>
+                    <li>
+                      Check all electrical cables end terminations for defective
+                      wiring 								  and poor/loose connection and mechanical damage or
+                      corrosion. Take 								  corrective action.
+                    </li>
+                    <li>Check all the fastener screws/bolts.</li>
+                    <li>Check state of gaskets and replace if perished.</li>
+                    <li>
+                      Check outside of the barrels for damage or signs of
+                      corrosion 								  and take corrective measures if necessary.
+                    </li>
+                  </ol>
+                </para>
+                <para>
+                  <h4>
+                    Internal Inspection
+                    (LCU/RCU)
+                  </h4>
+                </para>
+                <para>
+                  Perform the following:<ol
+type="a">
+                    <li>Ensure that the power supply to the system is switched OFF.</li>
+                    <li>Loosen all screws on the front/top panel of LCU and open it.</li>
+                    <li>
+                      Visually inspect inside of the LCU for dirt, corrosion,
+                      loose 								  particles and overheated components. Clean and preserve
+                      if required.
+                    </li>
+                    <li>
+                      Check all electrical/data/signal cables end terminations
+                      for defective 								  wiring and poor/loose connection and mechanical
+                      damage or corrosion. 								  Take corrective action.
+                    </li>
+                    <li>Check all the fastener screws/bolts.</li>
+                    <li>
+                      Check outside of the cabinet for damage or signs of
+                      corrosion 								  and chipped of paint, take corrective measures
+                      if necessary.
+                    </li>
+                    <li>Clean the exterior of the cabinet with a damp cloth and wipe dry.</li>
+                  </ol>
+                </para>
+                <para>
+                  <h4>
+                    Oil replacement in
+                    Gear box
+                  </h4>
+                </para>
+                <para>
+                  For Oil replacement
+                  in Gear box, 						  <a
+onclick="javascript:parent.VideoFrame(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Video/videos/V27_Gboilreplacement.mp4&quot;);parent.masterframe.rows=&quot;70%,30%&quot;"
+actuate="uSer">
+                    Click here <img
+src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/video.gif"
+style="height:40px;width:50px;"/>
+                  </a>
+                </para>
+                <para>
+                  Perform the following:<ol type="a">
+                    <li>Remove the oil by means of removing the drain plug.</li>
+                    <li>Put back the drain plug.</li>
+                    <li>
+                      Sieving oil through inlet of gear box and check the
+                      oil level 								  in its indicator.
+                    </li>
+                  </ol>
+                </para>
+                <para>
+                  <note>
+                    <para style="color:red">
+                      Note: Oil Specification: MAK AMOCAM
+                      320
+                    </para>
+                  </note>
+                </para>
+                <para>
+                  <h6>Cabinet Filters Clean</h6>
+                </para>
+                <para
+>Perform the following:</para>
+                <para>
+                  <ol type="a">
+                    <li>
+                      Using a Flat Blade Screwdriver, remove the six retaining screws
+                      from each of the three filter covers.
+                    </li>
+                    <li>Lift off the three, door filter covers.</li>
+                    <li>Gently clean the air filters with a suitable vacuum cleaner.</li>
+                    <li>Do a visual inspection to ensure all debris is removed.</li>
+                    <li>If debris cannot be removed, replace with a new filter.</li>
+                    <li>Close access.</li>
+                    <li>Align the three filter covers.</li>
+                    <li>
+                      Use a Flat Blade Screwdriver to tighten the six retaining screws
+                      on each of the three filter covers.
+                    </li>
+                  </ol>
+                </para>
+              </content>
+            </section>
+            <section id="2.4.3.5 Yearly Maintenance Routines" level="5">
+              <title id="2.4.3.5 Yearly Maintenance Routines">
+                2.4.3.5 Yearly
+                Maintenance 					  Routines
+              </title>
+              <content>
+                <para>(Periodicity code -A)</para>
+                <para>
+                  <h4>Internal Inspection-Console </h4>
+                </para>
+                <para
+>
+                  Perform the following:<ol type="a">
+                    <li>Remove the top cover by unscrewing captive screws on the top plate.</li>
+                    <li>
+                      Remove dust, dirt by using a vacuum cleaner and then
+                      clean the 								  PCBs with anti static ESD cleaning brush.
+                    </li>
+                    <li>
+                      Check all sub-assemblies, PCBs and other components
+                      for any damage 								  and verify that these are secured in their
+                      respective slots/positions 								  firmly.
+                    </li>
+                    <li>
+                      Check all electrical/data cables end terminations for
+                      defective 								  wiring and poor/loose connection and mechanical
+                      damage or corrosion. 								  Take corrective action.
+                    </li>
+                    <li>
+                      Wipe the LCD panel swiftly with cotton or other soft
+                      cloth. Do 								  not apply CCl4 (Carbon Tetrachloride) to the LCD
+                      Display or components 								  as it may damage polarizer.
+                    </li>
+                    <li>
+                      Check the condition of the MOV (Metal Oxide Varistor)
+                      mounted 								  on the RFI Line Filter on 230 VAC power lines and
+                      check if they are 								  deteriorated and replace if required.
+                    </li>
+                    <li>Close and tighten the screws of the top plate.</li>
+                  </ol>
+                </para>
+                <para>
+                  <h4>
+                    Internal Inspection
+                    (Winch- MCP)
+                  </h4>
+                </para>
+                <para>
+                  Perform
+                  the following:<ol type="a">
+                    <li>Ensure that the power supply to the system is switched OFF.</li>
+                    <li>Loosen all screws on the front/top panel of MCP and open it.</li>
+                    <li>
+                      Visually inspect inside of the MCP for dirt, corrosion,
+                      loose 								  particles and overheated components. Clean and preserve
+                      if required.
+                    </li>
+                    <li>
+                      Check all electrical/data cables end terminations for
+                      defective 								  wiring and poor/loose connection and mechanical
+                      damage or corrosion. 								  Take corrective action.
+                    </li>
+                    <li>Check all the fastener screws/bolts.</li>
+                    <li>
+                      Check outside of the cabinet for damage or signs of
+                      corrosion 								  and chipped of paint, take corrective measures
+                      if necessary.
+                    </li>
+                    <li>Clean the exterior of the cabinet with a damp cloth and wipe dry.</li>
+                  </ol>
+                </para>
+                <para>
+                  <h4>Continuity checks	</h4
+>
+                </para>
+                <para>
+                  Perform 						  the following:<ol
+type="a">
+                    <li>Ensure that the power supply to the system is switched OFF.</li>
+                    <li>Disengage all connectors.</li>
+                    <li>
+                      Check the continuity of all cables and ensure that
+                      it lies in 								  approximately  0 - 0.02 ohms.
+                    </li>
+                  </ol>
+                </para>
+                <para>
+                  <h4>
+                    Gasket checks (EDL/LCU-Door)
+                  </h4>
+                </para>
+                <para>
+                  Perform the following:<ol
+type="a">
+                    <li>Ensure that the power supply to the system is switched OFF.</li>
+                    <li>
+                      Open the EDL/LCU door and check the state of the gaskets
+                      and replace 								  them if necessary.
+                    </li>
+                    <li>Close the both the door and lock it properly.</li>
+                  </ol>
+                </para>
+                <para>
+                  <h4>
+                    Gasket checks (Winch-MCP
+                    Door)
+                  </h4>
+                </para>
+                <para>
+                  Perform the following:<ol
+type="a">
+                    <li>Ensure that the power supply to the system is switched OFF.</li>
+                    <li>
+                      Open the MCP door and check the state of the gaskets
+                      and replace 								  them if necessary.
+                    </li>
+                    <li>Close the both the door and lock it properly.</li>
+                  </ol>
+                </para>
+                <para>
+                  <h6>Cabinet Shock Mounts Inspect</h6>
+                </para
+>
+                <para>Perform the following:</para>
+                <para>
+                  <ol type="a">
+                    <li>
+                      Visually inspect all Cabinet Shock Mounts for signs of distortion,
+                      corrosion and material degradation.
+                    </li>
+                    <li>
+                      Surface corrosion may be cleaned off using a fine grade abrasive
+                      paper such as an emery cloth, and re-preserve as necessary.
+                    </li>
+                    <li>
+                      If deep surface corrosion is found or the mount is seriously deformed,
+                      the mounts must be replaced.
+                    </li>
+                  </ol>
+                </para>
+              </content>
+            </section>
 					  <section id="2.4.3.6 Two Yearly Maintenance Routines" level="5">
 						  <title id="2.4.3.6 Two Yearly Maintenance Routines">
 							  2.4.3.6 Two Yearly
@@ -21304,9 +21840,9 @@ actuate="user">
           </para>
         </content>
          </section>
-      <section id="1.5 Single Drum Winch MDNS-62-01-00-00-000 " level="2">
+      <section id="1.2 Single Drum Winch MDNS-62-01-00-00-000 " level="2">
 				<title>
-					1.5 Single Drum Winch <a
+					1.2 Single Drum Winch <a
   onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Fig_5_1_Winch.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;"
   actuate="user">(MDNS-62-01-00-00-000 )</a>
 				</title>
@@ -21421,9 +21957,9 @@ actuate="user">
 						</table>
 					</para>
 				</content>
-        <section id="1.5.2 Gear Drum Brake ASM MDNS-62-01-02-00-000" level="3">
+        <section id="1.2.1 Gear Drum Brake ASM MDNS-62-01-02-00-000" level="3">
           <title>
-            1.5.2 Gear Drum Brake ASM <a
+            1.2.1 Gear Drum Brake ASM <a
   onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Fig_5_3_Gear_Drum_Brake_ASM.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;"
   actuate="user">(MDNS-62-01-02-00-000)</a>
           </title>
@@ -22059,12 +22595,8 @@ actuate="user">
 				
 				
 			</section>
-		<section id="1.7" level="2">
-			
-		</section>
-		<section id="1.8" level="2">
-
-		</section>
+		
+		
 		
      
 	
@@ -22517,65 +23049,66 @@ actuate="user">Console</a>
           </para>
         </content>
       </section>
-      <section id="1.2 Fault Isolation" level="3">
-        <title>1.2 Fault Isolation</title>
+      <section id="1.2 Fault Localization" level="3">
+        <title>1.2 Fault Localization</title>
         <content>
           <para>
-            Once the fault is detected, software and hardware aids
-            are used to Isolation the fault. The procedure followed is to Isolation
-            the fault to a specific subsystem and then to an LRU. Fault diagnosis
-            and Isolation can be carried out from the LCU/RCU for Launcher
-            and by Error Codes displayed on MCP display for Winch.
+            Once the fault is detected, software and hardware
+            aids are used to localize the fault. The procedure followed is to
+            localize the fault to a specific subsystem and then to an LRU. Fault
+            diagnosis and localization can be carried out from the LCU/RCU for
+            Launcher, by Error Codes displayed on MCP display for Winch and by
+            illuminated LED’s on the Cabinet for the Cabinet.
           </para>
         </content>
       </section>
-      <section id="1.3 Built in Test Facilities  " level="3">
-        <title>1.3 Built in Test Facilities  </title>
+      <section id="1.3 Built in Test Equipment BITE Facilities  " level="3">
+        <title>1.3 Built in Test Equipment (BITE) Facilities  </title>
         <content>
           <para>
-            The system is provided with a BITE facility to check
-            the health of the system and to localize faults up to the Unit/LRU
+            The system is provided with a BITE facility to
+            check the health of the system and to localize faults up to the Unit/LRU
             level with the power ON. On switching ON, the various lamps on the
-            front panel of LCU/RCU/MCP will glow and confirming their initial
-            status. Essential self checks of all the units are carried out automatically
-            and the results displayed by means of glowing lamps. With the power
-            ON Console, LED indicators (+3.3V, +5V and ±12V) located on the front
-            panel of display (monitor) will glow and subsequently the built-in
-            LCD will become alive and display Power-On-Self-Test (POST) messages
-            and confirming their initial status.
+            front panel of LCU/RCU/MCP/<h6>Cabinet</h6> will glow and confirming
+            their initial status. Essential self checks of all the units are carried
+            out automatically and the results displayed by means of glowing lamps.
+            With the power ON Console, LED indicators (+3.3V, +5V and ±12V) located
+            on the front panel of display (monitor) will glow and subsequently
+            the built-in LCD will become alive and display Power-On-Self-Test
+            (POST) messages and confirming their initial status
           </para>
         </content>
       </section>
-      <section id="1.4 Fault Finding Procedure"
-      level="3">
-        <title>1.4 Fault Finding Procedure</title>
+      <section id="1.4 Fault Finding Procedures at System LRU Level    "
+level="3">
+        <title>1.4 Fault Finding Procedures at System/LRU Level    </title>
         <content>
           <para>
-            After the detection of a fault, the maintainer must
-            initially refer to the procedures described in the following paragraphs.
-          </para
-  >
-          <para>
-            A fault especially power failures occurring in any of the subsystems
-            like FVA, EDL, LCU &amp; RCU is presented on front panel of the LCU
-            and RCU by illuminating the blown fuse or by illuminating the LED
-            indicators with the power ON/OFF switches to ON position.
-          </para
-  >
-          <para>
-            A fault especially link failures occurring between any of the
-            subsystems like RCU and Cabinet are presented on their respective
-            front panel by illuminating the LED indicators.
+            After the detection of a fault, the maintainer
+            must initially refer to the procedures described in the following
+            paragraphs
           </para>
           <para>
-            A fault
-            especially power failures occurring in Winch (MCP) is presented on
-            its front panel by illuminating the blown fuse or by illuminating
-            the LED indicators with the power ON/OFF switches to ON position.
-            In addition, with the power ON, the system carryout the self test,
-            failure of any subsystem (with in the MCP) is displayed on the MCP
-            display; the failed subsystem is identified by its LRU code, unit/card
-            name and Failure symptom.
+            A fault especially power failures
+            occurring in any of the subsystems like FVA, EDL, LCU &amp; RCU is
+            presented on front panel of the LCU and RCU by illuminating the blown
+            fuse or by illuminating the LED indicators with the power ON/OFF switches
+            to ON position.
+          </para>
+          <para>
+            A fault especially link failures
+            occurring between any of the subsystems like RCU and Cabinet are presented
+            on their respective front panel by illuminating the LED indicators.
+          </para
+>
+          <para>
+            A fault especially power failures occurring in Winch
+            (MCP) is presented on its front panel by illuminating the blown fuse
+            or by illuminating the LED indicators with the power ON/OFF switches
+            to ON position. In addition, with the power ON, the system carryout
+            the self test, failure of any subsystem (with in the MCP) is displayed
+            on the MCP display; the failed subsystem is identified by its LRU
+            code, unit/card name and Failure symptom.
           </para>
         </content>
       </section>
@@ -22887,7 +23420,8 @@ actuate="user">Console</a>
                       <h6>Fault Indication</h6>
                     </td>
                     <td>
-                      <h6>Fault Diagnosis / Probable Cause</h6>
+                      <h6>Fault Diagnosis / Probable Cause</h6
+>
                     </td>
                     <td>
                       <h6>Remedial Action</h6>
@@ -22902,8 +23436,9 @@ actuate="user">Console</a>
                   <tr>
                     <td>b)	Faulty power cable.</td>
                     <td>
-                      Check the continuity of power cable with multi-meter. If no continuity
-                      found in any of the pins then replace power cable.
+                      Check the continuity of power cable with
+                      multi-meter. If no continuity                     found in any of
+                      the pins then replace power cable.
                     </td>
                   </tr>
                   <tr>
@@ -22912,22 +23447,24 @@ actuate="user">Console</a>
                   </tr>
                   <tr>
                     <td>
-                      Check the voltage at 1-PH Power Supply Module Input and Output,
-                      when power selector switch is set to 1-PH. If no voltage is observed
-                      then replace 1-PH Power Supply Module.
+                      Check the voltage at 1-PH Power Supply Module
+                      Input and Output,                     when power selector switch is
+                      set to 1-PH. If no voltage is observed                     then replace
+                      1-PH Power Supply Module.
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      Check the voltage at 3-PH Power Supply Module Input and Output,
-                      when power selector switch is set to 3-PH. If no voltage is observed
-                      then replace 3-PH Power Supply Module.
+                      Check the voltage at 3-PH Power Supply Module
+                      Input and Output,                     when power selector switch is
+                      set to 3-PH. If no voltage is observed                     then replace
+                      3-PH Power Supply Module.
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      Check the voltage at DC EMI Filter output. If no voltage is observed
-                      then replace Filter.
+                      Check the voltage at DC EMI Filter output.
+                      If no voltage is observed                     then replace Filter.
                     </td>
                   </tr>
                   <tr>
@@ -22943,22 +23480,22 @@ actuate="user">Console</a>
                   <tr>
                     <td>c)	Memory modules loose or faulty.</td>
                     <td>
-                      Press the memory module in the socket properly or replace memory
-                      module.
+                      Press the memory module in the socket properly
+                      or replace memory                     module.
                     </td>
                   </tr>
                   <tr>
                     <td>d)	Riser Card loose contact or Faulty.</td>
                     <td>
-                      Press the Riser Card connector in the socket properly or replace
-                      Riser Card.
+                      Press the Riser Card connector in the socket
+                      properly or replace                     Riser Card.
                     </td>
                   </tr>
                   <tr>
                     <td>e)	Graphics Card loose contact or Faulty.</td>
                     <td>
-                      Press the Graphics Card connector in the slot properly or replace
-                      Riser Card.
+                      Press the Graphics Card connector in the
+                      slot properly or replace                     Riser Card.
                     </td>
                   </tr>
                   <tr>
@@ -22996,15 +23533,14 @@ actuate="user">Console</a>
                   <tr>
                     <td>c)	Touch displacement.</td>
                     <td>
-                      <para>a)	Check by finger operation.</para>
-                      <para>b)	Do the calibration</para
-  >
+                      <para>a)	Check by finger operation.</para
+>
+                      <para>b)	Do the calibration</para>
                     </td>
                   </tr>
                   <tr>
                     <td rowspan="6">6</td>
                     <td rowspan="6">Communication Error</td>
-                     
                     <td rowspan="3">a)	FO Converters</td>
                     <td>a)	Check the input power supply.</td>
                   </tr>
@@ -23017,7 +23553,8 @@ actuate="user">Console</a>
                   <tr>
                     <td>b)	Faulty SFP Modules</td>
                     <td>
-                      <para>a)	Check the LED Indicators G1, G2.</para>
+                      <para>a)	Check the LED Indicators G1, G2.</para
+>
                       <para>
                         b)	Replace
                         SFP Module(s).
@@ -23028,16 +23565,17 @@ actuate="user">Console</a>
                     <td rowspan="2">c)	Network Error</td>
                     <td>
                       <para>a)	Check the IP address </para>
-                      <para>b)	Set the IP Address.</para
-  >
+                      <para>b)	Set the IP Address.</para>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <para>c)	Check the NO Network symbol.</para>
+                      <para>c)	Check the NO Network symbol.</para
+>
                       <para>
                         d)	Check the
-                        connection from SBC to FO converters with SFP Modules.
+                        connection from SBC to FO converters with SFP
+                        Modules.
                       </para>
                     </td>
                   </tr>
@@ -23054,15 +23592,17 @@ actuate="user">Console</a>
                   <tr>
                     <td>c)	Faulty Audio amplifier Board</td>
                     <td>
-                      Check the connection between SBC to Audio amplifier board. If
-                      faulty, replace the Audio amplifier board.
+                      Check the connection between SBC to Audio
+                      amplifier board. If                     faulty, replace the Audio
+                      amplifier board.
                     </td>
                   </tr>
                   <tr>
                     <td>d)	Faulty Volume control Pot</td>
                     <td>
-                      Check the connection between SBC to Volume control Pot. If faulty,
-                      replace the Volume control Pot.
+                      Check the connection between SBC to Volume
+                      control Pot. If faulty,                     replace the Volume control
+                      Pot.
                     </td>
                   </tr>
                   <tr>
@@ -23082,33 +23622,261 @@ actuate="user">Console</a>
                 </tbody>
               </table>
             </para>
+            <para>
+              The fault finding flowchart for the
+              Console can be found here – <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Fault_Finding_FlowChart_Console.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Fault Finding FlowChart<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
           </content>
         </section>
-		  <section id="1.5.6" level="4">
+        <section id="1.5.6  Troubleshooting" level="4">
+          <title>1.5.6 – Troubleshooting Cabinet</title>
+          <content>
+            <para>
+              The troubleshooting flowchart for the Electronics Shelf
+              PSU can be found here –  <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Cabinet_Electronics_Shelf_PSU.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Cabinet -Electronics Shelf PSU<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para
+>
+            <para>
+              The troubleshooting flowchart for Fan Fail can be found here
+              –  <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Cabinet_Fan_Fail.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Cabinet – Fan Fail<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+            <para>
+              The troubleshooting flowchart
+              for Mode 99 can be found here –  <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Cabinet_Mode_99.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Cabinet – Mode 99<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+            <para
+>
+              The troubleshooting flowchart for Diagnostic History can be found
+              here – <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Cabinet_Diagnostics_History.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Cabinet – Diagnostics History<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+          </content>
+        </section>
+        <section id="1.5.7 Troubleshooting Array" level="4">
+          <title>1.5.7 – Troubleshooting Array</title>
+          <content>
+            <para>
+              The troubleshooting flowchart for the Array Power Supply
+              can be found here – <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Array_Array_Power_Supply.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Array – Array Power Supply<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+            <para>
+              The
+              troubleshooting flowchart for Array Data can be found here –<a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Array_Array_Data.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Array – Array Data<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+          </content>
+          <section id="1.5.7.1 Troubleshooting Gps" level="4">
+            <title>1.5.7.1 – Troubleshooting Gps</title>
+            <content>
+              <para>
+                The troubleshooting flowchart for No GPS Data can be
+                found here – <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Array_GPS_No_GPS_Data.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                  Array - No GPS Data<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+                </a>
+              </para>
+            </content>
+          </section>
+          <section id="1.5.7.2 Trouble Shooting System Configuration" level="4">
+            <title>1.5.7.2 — Trouble Shooting System Configuration</title>
+            <content>
+              <para>
+                The troubleshooting flowchart for Array Stability Data
+                can be found here –<a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Array_System_Config_Array_Stability.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                  Array – System Config – Array Stability<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+                </a>
+              </para
+>
+              <para>
+                The troubleshooting flowchart for Sensor Configuration Error
+                can be found here –<a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Array_System_Config_Sensor_Configuration_Error.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                  Array – Sensor Configuration Error<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+                </a>
+              </para>
+              <para
+>
+                The troubleshooting flowchart for Sensor Configuration Undefined
+                can be found here – <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Array_System_Config_Sensor_Configuration_Undefined.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                  Array – System Config – Sensor Configuration Undefined<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+                </a>
+              </para
+>
+              <para>
+                The troubleshooting flowchart for Database Corruption can be
+                found here –<a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Array_System_Config_Database_Corruption.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                  Array – System Config – Database Corruption<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+                </a>
+              </para
+>
+            </content>
+          </section>
+        </section>
+        <section id="1.5.8  Winch Procedures" level="4">
+          <title>1.5.8 - Winch Procedures</title>
+          <content>
+            <para>
+              The troubleshooting flowchart for No Communications
+              can be found here –<a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Winch_No_Communications.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Winch - No Communications<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+          </content>
+        </section>
+        <section id="1.5.9 - EDL Procedures" level="4">
+          <title>1.5.9 – EDL Procedures</title>
+          <content>
+            <para>
+              The troubleshooting flowchart for the FVA can be found
+              here –<a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/EDL_FVA.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                EDL – FVA<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+            <para>
+              The troubleshooting flowchart for
+              the EDL Assembly can be found here –<a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/EDL_EDL_Assembly.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                EDL – EDL Assembly<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para
+>
+            <para>
+              The troubleshooting flowchart for Barrel Arm/Safe/Vent can
+              be found here –<a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/EDL_Barrel_Arm_Safe_Vent_Switch_Assembly.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                EDL – Barrel Arm-Safe-Vent Switch Assembly<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para
+>
+            <para>
+              The troubleshooting flowchart for the Barrel Pressure Switch
+              can be found here –<a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/EDL_Barrel_Pressure_Switch_Assembly.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                EDL – Barrel Pressure Switch Assembly<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para
+>
+            <para>
+              The troubleshooting flowchart for the Safe/Enable Switch can
+              be found here –<a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/EDL_Safe_Enable_Switch_Assembly.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                EDL – Safe-Enable Switch Assembly<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+            <para
+>
+              The troubleshooting flowchart for EDL Invalid Communications can
+              be found here –<a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/EDL_EDL_Invalid_Communications.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                EDL – EDL Invalid Communications<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+          </content>
+        </section>
+        <section id="1.5.10  Operational Procedures" level="4">
+          <title>1.5.10 - Operational Procedures</title>
+          <content>
+            <para>
+              The operational procedure flowchart for the FVA can
+              be found here –<a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Operational_Procedures_System_Startup.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Operational Procedures – System Startup<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para
+>
+            <para>
+              The operational procedure flowchart for the Second Console
+              Start Up can be found here –<a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Operational_Procedures_Second_Console_Startup.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Operational Procedures – Second Console Start-Up<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+            <para>
+              The operational procedure flowchart for the
+              Cabinet/Console Lost Connection can be found here – <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Operational_Procedures_Cabinet_Console_Connection_Lost.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Operational Procedures – Cabinet/Console Connection Lost<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+            <para>
+              The operational
+              procedure flowchart for the Turn on Console can be found here –<a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Operational_Procedures_Turn_on_Console.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Operational	Procedures – Turn on Console<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+            <para>
+              The operational procedure
+              flowchart for the Turn on Cabinet can be found here – <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Operational_Procedures_Turn_on_Cabinet.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Operational	Procedures – Turn on Cabinet<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+            <para>
+              The operational procedure
+              flowchart for the Shutdown System can be found here – <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Operational_Procedures_Shutdown_System.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Operational	Procedures – Shutdown System<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
 
-
-		  </section>
-		  <section id="1.5.7" level="4">
-			  <section id="1.5.7.1" level="5">
-				  
-			  </section>
-			  <section id="1.5.7.2" level="5">
-
-			  </section>
-
-
-		  </section>
-		  <section id="1.5.8" level="4">
-		
-
-
-		  </section>
-		  <section id="1.5.9" level="4">
-			  
-		  </section>
-		  <section id="1.5.10" level="4">
-
-		  </section>
+            <para>
+              The operational
+              procedure flowchart for the Render Alarm can be found here – <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Operational_Procedures_Render_Alarm.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Operational	Procedures – Render Alarm<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+            <para>
+              The operational procedure
+              flowchart for the E-Stop Reset can be found here – <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Operational_Procedures_E_Stop_Reset.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Operational Procedures – E-Stop Reset<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+            <para>
+              The operational procedure flowchart
+              for the Run Time Diagnostic can be found here – <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Operational_Procedures_Run_Time_Diagnostic.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Operational Procedures – Run Time Diagnostic<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+            <para>
+              The operational procedure flowchart
+              for the System Drive can be found here – <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Operational_Procedures_System_Drive.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Operational Procedures – System Drive<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+            <para>
+              The operational procedure flowchart for
+              the Archive Drive can be found here – <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Operational_Procedures_Archive_Drive.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Operational Procedures – Archive Drive<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+            <para>
+              The operational procedure flowchart for the
+              Manually Clear Diagnostics can be found here – <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Operational_Procedures_Manually_Clear_Diagnostics.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Operational Procedures – Manually Clear Diagnostics<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+            <para>
+              The operational procedure
+              flowchart for the Snapshot in Progress can be found here – <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Operational_Procedures_Snapshot_in_Progress.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Operational Procedures – Snapshot in Progress<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+            <para>
+              The operational
+              procedure flowchart for the Invalid Directory Path can be found here
+              – <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Operational_Procedures_Invalid_Directory_Path.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Operational Procedures – Invalid Directory Path<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+            <para
+>
+              The operational procedure flowchart for the Last Snapshot can be
+              found here – <a onclick="javascript:parent.showPDF(&quot;../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/Operational_Procedures_Last_Snapshot.pdf&quot;);parent.masterframe.rows=&quot;70%,30%&quot;">
+                Operational Procedures – Last Snapshot<img src="../Author/Contents/NTDS/The_New_Torpedo_Defence_System/Technical_Manual/Images/book.jfif" style="height:40px;width:50px;" />
+              </a>
+            </para>
+          </content>
+        </section>
 
 
 
